@@ -1,0 +1,525 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		97D916261DF54E659E3C2770 /* FleetBuilderApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBCDEBC7D8CE41078B6F171A /* FleetBuilderApp.swift */; };
+		9533703AD2E040448227110C /* AppSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 854A90AE35194F73A54DAE50 /* AppSettings.swift */; };
+		816D5265DB42496A9D03AE72 /* TeslaModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E018A6BC10EE41E387294776 /* TeslaModel.swift */; };
+		62FB58E5AAB347799F455CB3 /* VehicleListing+Hardware.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0488EABE7AC46B8A5525E01 /* VehicleListing+Hardware.swift */; };
+		AE954C14A4BE4E56B0101A4E /* VehicleListing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E91F55940E84846BE7228D5 /* VehicleListing.swift */; };
+		E5EF49898641481CB46AA634 /* DealScoringEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BDBF07180384C4690877EDF /* DealScoringEngine.swift */; };
+		1012DD0884304DAA9546A0D4 /* FleetStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA8F855152674E5797C39EB2 /* FleetStore.swift */; };
+		CBE75A7871804C108B9B80ED /* ListingAggregator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57263AAADFCA4F3EBD7F9EDD /* ListingAggregator.swift */; };
+		D3B8A9E059A84E3589BAC9F1 /* SampleCatalog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 138A2F7E94E7411F83E18637 /* SampleCatalog.swift */; };
+		A1BC42F0C44A42B9923E4E67 /* DealNotificationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1CA44266AAD4D4AB449EEC1 /* DealNotificationService.swift */; };
+		B2116B406D8C49A8A7A615A1 /* VINHardwareDecoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAEABD522D55498EAF8265AD /* VINHardwareDecoder.swift */; };
+		06AC8ABF3C804E65BA79ED7C /* FleetTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B271F6C96D044228EE51DA0 /* FleetTheme.swift */; };
+		CB46B2B5F9294CEA96B8A08B /* DealCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB00BD590D554E158CA606DF /* DealCardView.swift */; };
+		67A523890E3B49AA8DDD1E0F /* DealDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2C2B6F8A7A0404C9C9D7C6F /* DealDetailView.swift */; };
+		C6AF13561B64478B8FEFCA8D /* DealFeedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 779BC8D819AC45DDBBD825F4 /* DealFeedView.swift */; };
+		C547D8DC94A246A588604079 /* SourcesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C6B199A10D34CB3B62640B5 /* SourcesView.swift */; };
+		743AA186B7AF450CB3CAF972 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB100CA09D2247229F61BC0B /* SettingsView.swift */; };
+		4F56C5E288514E3E9A7735BB /* DealScoringEngineTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 479C48C66FC34E659D743B40 /* DealScoringEngineTests.swift */; };
+		807B7B1239814181B2136398 /* VINHardwareDecoderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDB7389F0B7F42EEA2A603EB /* VINHardwareDecoderTests.swift */; };
+		358376111A684618B070E5C0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 55F611FB83FB44669AE37A38 /* Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		9D2E1253E24F42FDAE93DD59 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 965EA9AD32334A4897A0150E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 01E410CD57BD4BB0A2242556;
+			remoteInfo = FleetBuilder;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		26C8B43666F2430885E80D45 /* FleetBuilder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FleetBuilder.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		26D4107A4AF4421FA453A2CB /* FleetBuilderTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FleetBuilderTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DBCDEBC7D8CE41078B6F171A /* FleetBuilderApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FleetBuilderApp.swift; sourceTree = "<group>"; };
+		854A90AE35194F73A54DAE50 /* AppSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppSettings.swift; sourceTree = "<group>"; };
+		E018A6BC10EE41E387294776 /* TeslaModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeslaModel.swift; sourceTree = "<group>"; };
+		C0488EABE7AC46B8A5525E01 /* VehicleListing+Hardware.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehicleListing+Hardware.swift; sourceTree = "<group>"; };
+		9E91F55940E84846BE7228D5 /* VehicleListing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehicleListing.swift; sourceTree = "<group>"; };
+		1BDBF07180384C4690877EDF /* DealScoringEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DealScoringEngine.swift; sourceTree = "<group>"; };
+		DA8F855152674E5797C39EB2 /* FleetStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FleetStore.swift; sourceTree = "<group>"; };
+		57263AAADFCA4F3EBD7F9EDD /* ListingAggregator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListingAggregator.swift; sourceTree = "<group>"; };
+		138A2F7E94E7411F83E18637 /* SampleCatalog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleCatalog.swift; sourceTree = "<group>"; };
+		C1CA44266AAD4D4AB449EEC1 /* DealNotificationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DealNotificationService.swift; sourceTree = "<group>"; };
+		BAEABD522D55498EAF8265AD /* VINHardwareDecoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VINHardwareDecoder.swift; sourceTree = "<group>"; };
+		5B271F6C96D044228EE51DA0 /* FleetTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FleetTheme.swift; sourceTree = "<group>"; };
+		AB00BD590D554E158CA606DF /* DealCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DealCardView.swift; sourceTree = "<group>"; };
+		E2C2B6F8A7A0404C9C9D7C6F /* DealDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DealDetailView.swift; sourceTree = "<group>"; };
+		779BC8D819AC45DDBBD825F4 /* DealFeedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DealFeedView.swift; sourceTree = "<group>"; };
+		2C6B199A10D34CB3B62640B5 /* SourcesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SourcesView.swift; sourceTree = "<group>"; };
+		CB100CA09D2247229F61BC0B /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		479C48C66FC34E659D743B40 /* DealScoringEngineTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DealScoringEngineTests.swift; sourceTree = "<group>"; };
+		BDB7389F0B7F42EEA2A603EB /* VINHardwareDecoderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VINHardwareDecoderTests.swift; sourceTree = "<group>"; };
+		55F611FB83FB44669AE37A38 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9A0BC71F818345A7AC46715F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0CD89CEBB80746FFB19BAABC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		78DB2CEBBF854D9CBB2CABB3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		88DEE814AF524ADFAFD93D1B /* App */ = {
+			isa = PBXGroup;
+			children = (
+				DBCDEBC7D8CE41078B6F171A /* FleetBuilderApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		CDBA2BBC9C0E423FBE30FF3C /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				854A90AE35194F73A54DAE50 /* AppSettings.swift */,
+				E018A6BC10EE41E387294776 /* TeslaModel.swift */,
+				C0488EABE7AC46B8A5525E01 /* VehicleListing+Hardware.swift */,
+				9E91F55940E84846BE7228D5 /* VehicleListing.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		DFC25E91E8984735B3EEC24E /* Theme */ = {
+			isa = PBXGroup;
+			children = (
+				5B271F6C96D044228EE51DA0 /* FleetTheme.swift */,
+			);
+			path = Theme;
+			sourceTree = "<group>";
+		};
+		BCD979D15AF54D3D8EB36155 /* DealScoring */ = {
+			isa = PBXGroup;
+			children = (
+				1BDBF07180384C4690877EDF /* DealScoringEngine.swift */,
+			);
+			path = DealScoring;
+			sourceTree = "<group>";
+		};
+		398EED9F95C44BE6861F0AB7 /* Listings */ = {
+			isa = PBXGroup;
+			children = (
+				57263AAADFCA4F3EBD7F9EDD /* ListingAggregator.swift */,
+				138A2F7E94E7411F83E18637 /* SampleCatalog.swift */,
+			);
+			path = Listings;
+			sourceTree = "<group>";
+		};
+		EBA8D79381C04F38825201EB /* Notifications */ = {
+			isa = PBXGroup;
+			children = (
+				C1CA44266AAD4D4AB449EEC1 /* DealNotificationService.swift */,
+			);
+			path = Notifications;
+			sourceTree = "<group>";
+		};
+		3A993EC5DBD544A1A506761E /* VIN */ = {
+			isa = PBXGroup;
+			children = (
+				BAEABD522D55498EAF8265AD /* VINHardwareDecoder.swift */,
+			);
+			path = VIN;
+			sourceTree = "<group>";
+		};
+		662F534CE35745579452D3B0 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				DA8F855152674E5797C39EB2 /* FleetStore.swift */,
+				BCD979D15AF54D3D8EB36155 /* DealScoring */,
+				398EED9F95C44BE6861F0AB7 /* Listings */,
+				EBA8D79381C04F38825201EB /* Notifications */,
+				3A993EC5DBD544A1A506761E /* VIN */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		2183183E69BC4FBE99E28B7E /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				AB00BD590D554E158CA606DF /* DealCardView.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		E921BC4CD08A4B468F9BD0B4 /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+				E2C2B6F8A7A0404C9C9D7C6F /* DealDetailView.swift */,
+			);
+			path = Detail;
+			sourceTree = "<group>";
+		};
+		38B6C26CC3604314BF244847 /* Feed */ = {
+			isa = PBXGroup;
+			children = (
+				779BC8D819AC45DDBBD825F4 /* DealFeedView.swift */,
+				2C6B199A10D34CB3B62640B5 /* SourcesView.swift */,
+			);
+			path = Feed;
+			sourceTree = "<group>";
+		};
+		326348AD6B134042AAEF7F26 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				CB100CA09D2247229F61BC0B /* SettingsView.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		334112FA02904220A4DE6997 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				2183183E69BC4FBE99E28B7E /* Components */,
+				E921BC4CD08A4B468F9BD0B4 /* Detail */,
+				38B6C26CC3604314BF244847 /* Feed */,
+				326348AD6B134042AAEF7F26 /* Settings */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		34C948FCABB74F5DB8A30D4F /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				55F611FB83FB44669AE37A38 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		BE6C3EA74AAD495C9E004495 /* FleetBuilder */ = {
+			isa = PBXGroup;
+			children = (
+				88DEE814AF524ADFAFD93D1B /* App */,
+				CDBA2BBC9C0E423FBE30FF3C /* Models */,
+				662F534CE35745579452D3B0 /* Services */,
+				DFC25E91E8984735B3EEC24E /* Theme */,
+				334112FA02904220A4DE6997 /* Views */,
+				34C948FCABB74F5DB8A30D4F /* Resources */,
+				9A0BC71F818345A7AC46715F /* Info.plist */,
+			);
+			path = FleetBuilder;
+			sourceTree = "<group>";
+		};
+		BDAEF26F422F4FC2917A8C8D /* FleetBuilderTests */ = {
+			isa = PBXGroup;
+			children = (
+				479C48C66FC34E659D743B40 /* DealScoringEngineTests.swift */,
+				BDB7389F0B7F42EEA2A603EB /* VINHardwareDecoderTests.swift */,
+			);
+			path = FleetBuilderTests;
+			sourceTree = "<group>";
+		};
+		8950A95A48D74A67BA0CCB7E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				26C8B43666F2430885E80D45 /* FleetBuilder.app */,
+				26D4107A4AF4421FA453A2CB /* FleetBuilderTests.xctest */,
+			);
+			sourceTree = "<group>";
+		};
+		9B8BF89D9EFE416D9A519946 /* main */ = {
+			isa = PBXGroup;
+			children = (
+				BE6C3EA74AAD495C9E004495 /* FleetBuilder */,
+				BDAEF26F422F4FC2917A8C8D /* FleetBuilderTests */,
+				8950A95A48D74A67BA0CCB7E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		01E410CD57BD4BB0A2242556 /* FleetBuilder */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 07EEDFC775C74BF5A2E4FDAB /* Build configuration list for PBXNativeTarget "FleetBuilder" */;
+			buildPhases = (
+				358E4F742A494C1DB221EFEB /* Sources */,
+				0CD89CEBB80746FFB19BAABC /* Frameworks */,
+				B3018FE18E474B3B9AC7C5CE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FleetBuilder;
+			productName = FleetBuilder;
+			productReference = 26C8B43666F2430885E80D45 /* FleetBuilder.app */;
+			productType = "com.apple.product-type.application";
+		};
+		663EEEAB775948E592CC3A77 /* FleetBuilderTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B2D35AB687F14F51A8FEAD7E /* Build configuration list for PBXNativeTarget "FleetBuilderTests" */;
+			buildPhases = (
+				39F13DF3E4EE47A3A84DB031 /* Sources */,
+				78DB2CEBBF854D9CBB2CABB3 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9817B585B9B64B6D90A4450E /* PBXTargetDependency */,
+			);
+			name = FleetBuilderTests;
+			productName = FleetBuilderTests;
+			productReference = 26D4107A4AF4421FA453A2CB /* FleetBuilderTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		965EA9AD32334A4897A0150E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					01E410CD57BD4BB0A2242556 = {
+						CreatedOnToolsVersion = 15.0;
+					};
+					663EEEAB775948E592CC3A77 = {
+						CreatedOnToolsVersion = 15.0;
+						TestTargetID = 01E410CD57BD4BB0A2242556;
+					};
+				};
+			};
+			buildConfigurationList = 38D2BE98B90E48D69FF922FC /* Build configuration list for PBXProject "FleetBuilder" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9B8BF89D9EFE416D9A519946;
+			productRefGroup = 8950A95A48D74A67BA0CCB7E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				01E410CD57BD4BB0A2242556 /* FleetBuilder */,
+				663EEEAB775948E592CC3A77 /* FleetBuilderTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B3018FE18E474B3B9AC7C5CE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				358376111A684618B070E5C0 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		358E4F742A494C1DB221EFEB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				97D916261DF54E659E3C2770 /* FleetBuilderApp.swift in Sources */,
+				9533703AD2E040448227110C /* AppSettings.swift in Sources */,
+				816D5265DB42496A9D03AE72 /* TeslaModel.swift in Sources */,
+				62FB58E5AAB347799F455CB3 /* VehicleListing+Hardware.swift in Sources */,
+				AE954C14A4BE4E56B0101A4E /* VehicleListing.swift in Sources */,
+				E5EF49898641481CB46AA634 /* DealScoringEngine.swift in Sources */,
+				1012DD0884304DAA9546A0D4 /* FleetStore.swift in Sources */,
+				CBE75A7871804C108B9B80ED /* ListingAggregator.swift in Sources */,
+				D3B8A9E059A84E3589BAC9F1 /* SampleCatalog.swift in Sources */,
+				A1BC42F0C44A42B9923E4E67 /* DealNotificationService.swift in Sources */,
+				B2116B406D8C49A8A7A615A1 /* VINHardwareDecoder.swift in Sources */,
+				06AC8ABF3C804E65BA79ED7C /* FleetTheme.swift in Sources */,
+				CB46B2B5F9294CEA96B8A08B /* DealCardView.swift in Sources */,
+				67A523890E3B49AA8DDD1E0F /* DealDetailView.swift in Sources */,
+				C6AF13561B64478B8FEFCA8D /* DealFeedView.swift in Sources */,
+				C547D8DC94A246A588604079 /* SourcesView.swift in Sources */,
+				743AA186B7AF450CB3CAF972 /* SettingsView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		39F13DF3E4EE47A3A84DB031 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4F56C5E288514E3E9A7735BB /* DealScoringEngineTests.swift in Sources */,
+				807B7B1239814181B2136398 /* VINHardwareDecoderTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9817B585B9B64B6D90A4450E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 01E410CD57BD4BB0A2242556 /* FleetBuilder */;
+			targetProxy = 9D2E1253E24F42FDAE93DD59 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		9C4A86CD9A294A5B97CA0D9B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("DEBUG=1", "$(inherited)",);
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+			};
+			name = Debug;
+		};
+		B605ACFE321347B4B024143C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+			};
+			name = Release;
+		};
+		F6861F2024B440D5ABA4CE5D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = FleetBuilder/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = ("$(inherited)", "@executable_path/Frameworks",);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.fleetbuilder.app;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		52A0A438BE114CCFBE78E771 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = FleetBuilder/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = ("$(inherited)", "@executable_path/Frameworks",);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.fleetbuilder.app;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		09D2178DF0C24C919AE0DA90 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.fleetbuilder.app.tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FleetBuilder.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/FleetBuilder";
+			};
+			name = Debug;
+		};
+		5D7CE29077F8499C85F85369 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.fleetbuilder.app.tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FleetBuilder.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/FleetBuilder";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		38D2BE98B90E48D69FF922FC /* Build configuration list for PBXProject "FleetBuilder" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9C4A86CD9A294A5B97CA0D9B /* Debug */,
+				B605ACFE321347B4B024143C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		07EEDFC775C74BF5A2E4FDAB /* Build configuration list for PBXNativeTarget "FleetBuilder" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F6861F2024B440D5ABA4CE5D /* Debug */,
+				52A0A438BE114CCFBE78E771 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B2D35AB687F14F51A8FEAD7E /* Build configuration list for PBXNativeTarget "FleetBuilderTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				09D2178DF0C24C919AE0DA90 /* Debug */,
+				5D7CE29077F8499C85F85369 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 965EA9AD32334A4897A0150E /* Project object */;
+}
