@@ -6,7 +6,7 @@ import { YouTubeEmbed } from "@/components/YouTubeEmbed";
 
 export function Craft() {
   return (
-    <section id={craft.id} className="section-pad relative py-28 md:py-36">
+    <section id={craft.id} className="section-pad relative py-28 pb-16 md:py-36 md:pb-20">
       <div className="mx-auto max-w-6xl">
         <Reveal>
           <p className="eyebrow">{craft.eyebrow}</p>

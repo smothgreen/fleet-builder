@@ -77,7 +77,7 @@ export const bluworld = {
 export const craft = {
   id: "craft",
   eyebrow: "Craft",
-  title: "Stories I've made.",
+  title: "Storytelling.",
   film: {
     title: "Ice Cold Nikes",
     line: "Wrote, produced, and directed. Short Film Production Award — University of Wisconsin–Madison Film Festival.",
