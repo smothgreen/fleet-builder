@@ -10,19 +10,19 @@ export function BluWorld() {
   return (
     <section
       id={bluworld.id}
-      className="section-pad relative overflow-hidden border-y border-line py-28 md:py-36"
+      className="section-pad relative overflow-hidden pt-16 pb-28 md:pt-20 md:pb-36"
     >
-      <div className="relative mx-auto max-w-6xl">
-        <div className="grid items-center gap-10 lg:grid-cols-[1.15fr_0.85fr] lg:gap-12">
+      <div className="relative mx-auto max-w-5xl">
+        <div className="grid items-center gap-8 lg:grid-cols-[1.2fr_0.8fr] lg:gap-10">
           <Reveal>
             <p className="eyebrow">{bluworld.eyebrow}</p>
             <h2 className="font-display mt-5 text-4xl tracking-tight text-paper md:text-6xl">
               {bluworld.title}
             </h2>
-            <p className="mt-5 max-w-2xl text-xl text-paper-soft md:text-2xl md:leading-snug">
+            <p className="mt-5 text-xl text-paper-soft md:text-2xl md:leading-snug">
               {bluworld.subtitle}
             </p>
-            <p className="mt-5 max-w-2xl text-base leading-relaxed text-mist md:text-lg">
+            <p className="mt-5 text-base leading-relaxed text-mist md:text-lg">
               {bluworld.body}
             </p>
             <a
@@ -36,22 +36,22 @@ export function BluWorld() {
             </a>
           </Reveal>
 
-          <Reveal delay={0.08} className="mx-auto w-full max-w-[240px] lg:mx-0 lg:max-w-[280px]">
+          <Reveal delay={0.08} className="mx-auto w-full max-w-[220px] lg:mx-0 lg:justify-self-end lg:max-w-[240px]">
             <Image
               src={bluworld.globe}
               alt="BluWorld globe"
               width={840}
               height={840}
               className="aspect-square h-auto w-full rounded-[2.5rem] shadow-[0_0_60px_-12px_rgba(56,189,248,0.35)]"
-              sizes="(max-width: 1024px) 240px, 280px"
+              sizes="(max-width: 1024px) 220px, 240px"
             />
           </Reveal>
         </div>
 
-        <div className="mx-auto mt-16 grid max-w-5xl gap-10 sm:grid-cols-2 sm:gap-14 lg:gap-16">
+        <div className="mt-16 grid gap-10 sm:grid-cols-2 sm:gap-12 lg:gap-14">
           {[sideQuestScreen, eventsScreen].map((screen, index) => (
             <Reveal key={screen.src} delay={index * 0.08}>
-              <figure className="mx-auto w-full max-w-[340px] sm:max-w-none">
+              <figure className="w-full">
                 <div className="phone-frame">
                   <Image
                     src={screen.src}
@@ -59,7 +59,7 @@ export function BluWorld() {
                     width={507}
                     height={1024}
                     className="h-auto w-full"
-                    sizes="(max-width: 640px) 78vw, 340px"
+                    sizes="(max-width: 640px) 78vw, 420px"
                   />
                 </div>
                 <figcaption className="mt-4 text-center text-sm text-mist">
@@ -70,7 +70,7 @@ export function BluWorld() {
           ))}
         </div>
 
-        <Reveal delay={0.16} className="mx-auto mt-12 max-w-5xl">
+        <Reveal delay={0.16} className="mt-12">
           <figure>
             <div className="overflow-hidden rounded-[2rem] border border-line bg-black shadow-[0_30px_80px_rgba(0,0,0,0.45)]">
               <Image
