@@ -125,6 +125,36 @@ body {
   transform: translateY(0);
 }
 
+.skad-logo-glow {
+  position: relative;
+  isolation: isolate;
+}
+
+.skad-logo-glow::before {
+  content: "";
+  position: absolute;
+  inset: -18%;
+  z-index: 0;
+  border-radius: 2rem;
+  background:
+    radial-gradient(circle at 50% 50%, rgba(196, 181, 253, 0.55) 0%, rgba(139, 92, 246, 0.35) 38%, rgba(139, 92, 246, 0.12) 62%, transparent 78%);
+  filter: blur(18px);
+  animation: skad-breathe 4.5s ease-in-out infinite;
+  pointer-events: none;
+}
+
+@keyframes skad-breathe {
+  0%,
+  100% {
+    opacity: 0.55;
+    transform: scale(0.94);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.06);
+  }
+}
+
 @media (prefers-reduced-motion: reduce) {
   .hero-enter {
     animation: none;
@@ -134,5 +164,11 @@ body {
     opacity: 1;
     transform: none;
     transition: none;
+  }
+
+  .skad-logo-glow::before {
+    animation: none;
+    opacity: 0.75;
+    transform: none;
   }
 }

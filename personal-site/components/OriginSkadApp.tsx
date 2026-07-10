@@ -11,14 +11,16 @@ export function OriginSkadApp() {
         <div className="flex h-full flex-col">
           <Reveal>
             <div className="max-w-xl">
-              <Image
-                src={origin.product.logo}
-                alt={origin.product.logoAlt}
-                width={1024}
-                height={1024}
-                className="mx-auto mb-5 block h-auto w-[160px] rounded-2xl sm:mb-6 sm:w-[180px] md:w-[200px]"
-                sizes="200px"
-              />
+              <div className="skad-logo-glow mx-auto mb-5 w-[160px] sm:mb-6 sm:w-[180px] md:w-[200px]">
+                <Image
+                  src={origin.product.logo}
+                  alt={origin.product.logoAlt}
+                  width={1024}
+                  height={1024}
+                  className="relative z-10 block h-auto w-full rounded-2xl"
+                  sizes="200px"
+                />
+              </div>
               <p className="eyebrow text-center text-skad-soft md:text-left">
                 {origin.eyebrow}
               </p>
