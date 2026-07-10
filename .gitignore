@@ -8,3 +8,10 @@ DerivedData/
 *.ipa
 *.dSYM.zip
 *.dSYM
+
+# personal-site (Next.js)
+personal-site/node_modules/
+personal-site/.next/
+personal-site/out/
+personal-site/.vercel/
+personal-site/*.tsbuildinfo

@@ -1,0 +1,58 @@
+"use client";
+
+import Image from "next/image";
+import { howIMove } from "@/content/story";
+import { Reveal } from "@/components/Motion/Reveal";
+
+export function HowIMove() {
+  return (
+    <section
+      id={howIMove.id}
+      className="section-pad relative border-y border-line bg-ink-elevated/60 py-28 md:py-36"
+    >
+      <div className="mx-auto max-w-6xl">
+        <Reveal>
+          <p className="eyebrow">{howIMove.eyebrow}</p>
+          <h2 className="font-display mt-5 max-w-3xl text-4xl tracking-tight text-paper md:text-5xl">
+            {howIMove.title}
+          </h2>
+        </Reveal>
+
+        <div className="mt-16 space-y-16 md:space-y-24">
+          {howIMove.beats.map((beat, index) => {
+            const reverse = index % 2 === 1;
+            return (
+              <Reveal key={beat.title}>
+                <article
+                  className={`grid items-center gap-8 md:grid-cols-2 md:gap-14 ${
+                    reverse ? "md:[&>*:first-child]:order-2" : ""
+                  }`}
+                >
+                  <div className="relative aspect-[16/11] overflow-hidden rounded-[1.25rem]">
+                    <Image
+                      src={beat.image}
+                      alt=""
+                      fill
+                      className="object-cover"
+                      sizes="(max-width: 768px) 100vw, 50vw"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-ink/50 to-transparent" />
+                  </div>
+                  <div>
+                    <p className="text-sm text-mist">0{index + 1}</p>
+                    <h3 className="font-display mt-3 text-3xl tracking-tight text-paper">
+                      {beat.title}
+                    </h3>
+                    <p className="mt-4 text-base leading-relaxed text-paper-soft md:text-lg">
+                      {beat.body}
+                    </p>
+                  </div>
+                </article>
+              </Reveal>
+            );
+          })}
+        </div>
+      </div>
+    </section>
+  );
+}
