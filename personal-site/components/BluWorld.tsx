@@ -37,7 +37,7 @@ export function BluWorld() {
 
         <Reveal
           delay={0.08}
-          className="mx-auto flex w-full max-w-[240px] items-center sm:mx-0 sm:max-w-[260px] sm:justify-self-end sm:self-center"
+          className="mx-auto flex w-full max-w-[280px] items-center justify-center sm:max-w-[300px] sm:justify-self-center sm:self-center"
         >
           <Image
             src={bluworld.globe}
@@ -45,7 +45,7 @@ export function BluWorld() {
             width={840}
             height={840}
             className="aspect-square h-auto w-full rounded-[2.5rem] shadow-[0_0_60px_-12px_rgba(56,189,248,0.35)]"
-            sizes="(max-width: 640px) 240px, 260px"
+            sizes="(max-width: 640px) 280px, 300px"
           />
         </Reveal>
 
