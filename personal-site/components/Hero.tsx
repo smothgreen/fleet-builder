@@ -36,7 +36,7 @@ export function Hero() {
 
       <div className="section-pad relative z-10 mx-auto w-full max-w-6xl pb-12 pt-32 md:pb-16">
         <p className="eyebrow hero-enter mb-6" style={{ animationDelay: "80ms" }}>
-          Builder · Founder · Doer
+          Builder · Founder · Human
         </p>
         <h1
           className="font-display hero-enter max-w-3xl text-[clamp(3.2rem,9vw,6.5rem)] leading-[0.92] tracking-[-0.03em] text-paper"

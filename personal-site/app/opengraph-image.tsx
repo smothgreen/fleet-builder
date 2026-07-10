@@ -2,7 +2,7 @@ import { readFile } from "fs/promises";
 import { join } from "path";
 import { ImageResponse } from "next/og";
 
-export const alt = "David Skadron — Builder · Founder · Doer";
+export const alt = "David Skadron — Builder · Founder · Human";
 export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";
 
@@ -22,9 +22,9 @@ export default async function Image() {
   );
   const portraitSrc = `data:image/jpeg;base64,${portrait.toString("base64")}`;
 
-  const eyebrow = "Builder · Founder · Storyteller";
+  const eyebrow = "Builder · Founder · Doer";
   const name = "David Skadron";
-  const thesis = "I see a problem and I build the solution.";
+  const thesis = "I see a problem and I find the solution.";
   const fontText = `${eyebrow}${name}${thesis}`;
 
   const [displayFont, bodyFont] = await Promise.all([
