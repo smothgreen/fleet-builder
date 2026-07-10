@@ -24,6 +24,24 @@ npm start
 - Framer Motion (scroll reveals, hero parallax, reduced-motion safe)
 - Content lives in [`content/story.ts`](content/story.ts) for easy edits
 
+## Deploy to Vercel (preview first)
+
+From the repo root (or with Root Directory set to `personal-site`):
+
+1. Import the GitHub repo in [Vercel](https://vercel.com/new).
+2. Set **Root Directory** to `personal-site`.
+3. Framework preset: Next.js. Build command `npm run build`, output default.
+4. Deploy a preview, then promote to Production when it looks right.
+5. Attach the custom domain (below).
+
+CLI alternative (from this folder, after `vercel login`):
+
+```bash
+cd personal-site
+npx vercel
+npx vercel --prod
+```
+
 ## Domain cutover (leave Wix, keep `davidskad.com`)
 
 1. Deploy this app to Vercel (or connect the GitHub repo and import the `personal-site` folder as the root directory).

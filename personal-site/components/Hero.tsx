@@ -12,10 +12,8 @@ export function Hero() {
     target: ref,
     offset: ["start start", "end start"],
   });
-  const imageY = useTransform(scrollYProgress, [0, 1], reduce ? [0, 0] : [0, 120]);
-  const imageScale = useTransform(scrollYProgress, [0, 1], reduce ? [1, 1] : [1.08, 1]);
-  const contentY = useTransform(scrollYProgress, [0, 1], reduce ? [0, 0] : [0, 60]);
-  const opacity = useTransform(scrollYProgress, [0, 0.7], [1, 0.15]);
+  const imageY = useTransform(scrollYProgress, [0, 1], reduce ? [0, 0] : [0, 100]);
+  const imageScale = useTransform(scrollYProgress, [0, 1], reduce ? [1, 1] : [1.06, 1]);
 
   return (
     <section
@@ -29,54 +27,38 @@ export function Hero() {
           alt="David Skadron on State Street in Madison"
           fill
           priority
-          className="object-cover object-[70%_20%]"
+          className="object-cover object-[80%_28%] md:object-[75%_32%]"
           sizes="100vw"
         />
       </motion.div>
-      <div className="absolute inset-0 bg-gradient-to-r from-ink via-ink/75 to-ink/25" />
-      <div className="absolute inset-0 bg-gradient-to-t from-ink via-ink/40 to-transparent" />
+      <div className="absolute inset-0 bg-gradient-to-r from-ink via-ink/80 to-ink/30" />
+      <div className="absolute inset-0 bg-gradient-to-t from-ink via-ink/50 to-ink/10" />
 
-      <motion.div
-        className="section-pad relative z-10 mx-auto w-full max-w-6xl pb-20 pt-32 md:pb-28"
-        style={{ y: contentY, opacity }}
-      >
-        <motion.p
-          className="eyebrow mb-6"
-          initial={reduce ? false : { opacity: 0, y: 16 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.7, delay: 0.1 }}
-        >
+      <div className="section-pad relative z-10 mx-auto w-full max-w-6xl pb-20 pt-32 md:pb-28">
+        <p className="eyebrow hero-enter mb-6" style={{ animationDelay: "80ms" }}>
           Builder · Storyteller · Founder
-        </motion.p>
-        <motion.h1
-          className="font-display max-w-3xl text-[clamp(3.2rem,9vw,6.5rem)] leading-[0.92] tracking-[-0.03em] text-paper"
-          initial={reduce ? false : { opacity: 0, y: 28 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.9, delay: 0.2, ease: [0.22, 1, 0.36, 1] }}
+        </p>
+        <h1
+          className="font-display hero-enter max-w-3xl text-[clamp(3.2rem,9vw,6.5rem)] leading-[0.92] tracking-[-0.03em] text-paper"
+          style={{ animationDelay: "160ms" }}
         >
           {hero.name}
-        </motion.h1>
-        <motion.p
-          className="mt-7 max-w-xl text-lg text-paper-soft md:text-xl md:leading-relaxed"
-          initial={reduce ? false : { opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 0.35 }}
+        </h1>
+        <p
+          className="hero-enter mt-7 max-w-xl text-lg text-paper-soft md:text-xl md:leading-relaxed"
+          style={{ animationDelay: "280ms" }}
         >
           {hero.thesis}
-        </motion.p>
-        <motion.p
-          className="mt-3 max-w-lg text-base text-mist"
-          initial={reduce ? false : { opacity: 0, y: 16 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 0.45 }}
+        </p>
+        <p
+          className="hero-enter mt-3 max-w-lg text-base text-mist"
+          style={{ animationDelay: "380ms" }}
         >
           {hero.supporting}
-        </motion.p>
-        <motion.div
-          className="mt-10 flex flex-wrap items-center gap-4"
-          initial={reduce ? false : { opacity: 0, y: 16 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 0.55 }}
+        </p>
+        <div
+          className="hero-enter mt-10 flex flex-wrap items-center gap-4"
+          style={{ animationDelay: "480ms" }}
         >
           <a
             href={`mailto:${site.email}`}
@@ -90,8 +72,8 @@ export function Hero() {
           >
             See the work
           </a>
-        </motion.div>
-      </motion.div>
+        </div>
+      </div>
     </section>
   );
 }
