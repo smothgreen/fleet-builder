@@ -13,7 +13,7 @@ export function BluWorld() {
       className="section-pad relative overflow-hidden border-y border-line py-28 md:py-36"
     >
       <div className="relative mx-auto max-w-6xl">
-        <div className="grid items-center gap-12 lg:grid-cols-[1.2fr_0.8fr] lg:gap-20">
+        <div className="grid items-center gap-10 lg:grid-cols-[1.15fr_0.85fr] lg:gap-12">
           <Reveal>
             <p className="eyebrow">{bluworld.eyebrow}</p>
             <h2 className="font-display mt-5 text-4xl tracking-tight text-paper md:text-6xl">
@@ -36,22 +36,22 @@ export function BluWorld() {
             </a>
           </Reveal>
 
-          <Reveal delay={0.08} className="mx-auto w-full max-w-[260px] lg:max-w-[300px]">
+          <Reveal delay={0.08} className="mx-auto w-full max-w-[240px] lg:mx-0 lg:max-w-[280px]">
             <Image
               src={bluworld.globe}
               alt="BluWorld globe"
               width={840}
               height={840}
               className="aspect-square h-auto w-full rounded-[2.5rem] shadow-[0_0_60px_-12px_rgba(56,189,248,0.35)]"
-              sizes="(max-width: 1024px) 260px, 300px"
+              sizes="(max-width: 1024px) 240px, 280px"
             />
           </Reveal>
         </div>
 
-        <div className="mx-auto mt-16 grid max-w-3xl gap-8 sm:grid-cols-2 sm:gap-10">
+        <div className="mx-auto mt-16 grid max-w-5xl gap-10 sm:grid-cols-2 sm:gap-14 lg:gap-16">
           {[sideQuestScreen, eventsScreen].map((screen, index) => (
             <Reveal key={screen.src} delay={index * 0.08}>
-              <figure className="mx-auto w-full max-w-[300px]">
+              <figure className="mx-auto w-full max-w-[340px] sm:max-w-none">
                 <div className="phone-frame">
                   <Image
                     src={screen.src}
@@ -59,7 +59,7 @@ export function BluWorld() {
                     width={507}
                     height={1024}
                     className="h-auto w-full"
-                    sizes="(max-width: 640px) 78vw, 300px"
+                    sizes="(max-width: 640px) 78vw, 340px"
                   />
                 </div>
                 <figcaption className="mt-4 text-center text-sm text-mist">
@@ -70,7 +70,7 @@ export function BluWorld() {
           ))}
         </div>
 
-        <Reveal delay={0.16} className="mx-auto mt-12 max-w-3xl">
+        <Reveal delay={0.16} className="mx-auto mt-12 max-w-5xl">
           <figure>
             <div className="overflow-hidden rounded-[2rem] border border-line bg-black shadow-[0_30px_80px_rgba(0,0,0,0.45)]">
               <Image
@@ -79,7 +79,7 @@ export function BluWorld() {
                 width={720}
                 height={1480}
                 className="h-auto w-full"
-                sizes="(max-width: 768px) 92vw, 768px"
+                sizes="(max-width: 768px) 92vw, 1024px"
               />
             </div>
             <figcaption className="mt-4 text-center text-sm text-mist">
