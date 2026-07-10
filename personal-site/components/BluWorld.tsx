@@ -10,7 +10,7 @@ export function BluWorld() {
   return (
     <section
       id={bluworld.id}
-      className="section-pad relative overflow-hidden pt-16 pb-28 md:pt-20 md:pb-36"
+      className="section-pad relative isolate overflow-hidden bg-ink pt-28 pb-28 md:pt-36 md:pb-36"
     >
       <div className="relative mx-auto grid max-w-4xl gap-x-10 gap-y-12 sm:grid-cols-2 lg:gap-x-14 lg:gap-y-16">
         <Reveal>

@@ -6,7 +6,7 @@ import { Reveal } from "@/components/Motion/Reveal";
 
 export function OriginSkadApp() {
   return (
-    <section id={origin.id} className="section-pad relative py-28 pb-16 md:py-36 md:pb-20">
+    <section id={origin.id} className="section-pad relative bg-ink py-28 pb-20 md:py-36 md:pb-28">
       <div className="mx-auto grid max-w-6xl items-stretch gap-12 lg:grid-cols-2 lg:gap-16">
         <div className="flex h-full flex-col">
           <Reveal>
