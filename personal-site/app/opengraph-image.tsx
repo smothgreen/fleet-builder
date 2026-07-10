@@ -2,7 +2,7 @@ import { readFile } from "fs/promises";
 import { join } from "path";
 import { ImageResponse } from "next/og";
 
-export const alt = "David Skadron — Builder · Founder · Storyteller";
+export const alt = "David Skadron — Builder · Founder · Doer";
 export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";
 
