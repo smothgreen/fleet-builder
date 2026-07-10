@@ -3,6 +3,7 @@
 import Image from "next/image";
 import { craft } from "@/content/story";
 import { Reveal } from "@/components/Motion/Reveal";
+import { YouTubeEmbed } from "@/components/YouTubeEmbed";
 
 export function Craft() {
   return (
@@ -17,41 +18,26 @@ export function Craft() {
 
         <div className="mt-14 grid gap-12 lg:grid-cols-[1.2fr_0.8fr]">
           <Reveal>
-            <div className="overflow-hidden rounded-[1.5rem]">
-              <div className="relative aspect-[16/10]">
-                <Image
-                  src={craft.film.stills[0]}
-                  alt="Still from Ice Cold Nikes"
-                  fill
-                  className="object-cover"
-                  sizes="(max-width: 1024px) 100vw, 60vw"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-ink via-transparent to-transparent" />
-                <div className="absolute bottom-0 left-0 p-6 md:p-8">
-                  <p className="text-sm uppercase tracking-[0.18em] text-warm">
-                    Short film
-                  </p>
-                  <h3 className="font-display mt-2 text-3xl text-paper md:text-4xl">
-                    {craft.film.title}
-                  </h3>
-                  <p className="mt-3 max-w-lg text-sm leading-relaxed text-paper-soft md:text-base">
-                    {craft.film.line}
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div className="mt-3 grid grid-cols-3 gap-3">
-              {craft.film.stills.slice(1).map((src) => (
-                <div key={src} className="relative aspect-[4/3] overflow-hidden rounded-xl">
-                  <Image
-                    src={src}
-                    alt=""
-                    fill
-                    className="object-cover"
-                    sizes="200px"
-                  />
-                </div>
-              ))}
+            <YouTubeEmbed
+              videoId={craft.film.youtubeId}
+              title={`${craft.film.title} — award-winning short film by David Skadron`}
+            />
+            <div className="mt-5">
+              <p className="text-sm uppercase tracking-[0.18em] text-warm">Short film</p>
+              <h3 className="font-display mt-2 text-3xl text-paper md:text-4xl">
+                {craft.film.title}
+              </h3>
+              <p className="mt-3 max-w-lg text-sm leading-relaxed text-paper-soft md:text-base">
+                {craft.film.line}
+              </p>
+              <a
+                href={craft.film.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="mt-4 inline-flex text-sm text-accent-soft transition hover:text-paper"
+              >
+                Watch on YouTube →
+              </a>
             </div>
           </Reveal>
 
@@ -65,16 +51,32 @@ export function Craft() {
             <p className="mt-5 text-base leading-relaxed text-paper-soft md:text-lg">
               {craft.campaign.line}
             </p>
-            <div className="relative mt-10 aspect-[4/5] overflow-hidden rounded-[1.25rem]">
-              <Image
-                src="/images/craft/film-2.jpg"
-                alt="Cinematic portrait still"
-                fill
-                className="object-cover"
-                sizes="(max-width: 1024px) 100vw, 35vw"
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-ink/80 to-transparent" />
-            </div>
+            <a
+              href={craft.campaign.xUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group relative mt-8 block overflow-hidden rounded-[1.25rem]"
+            >
+              <div className="relative aspect-[9/14]">
+                <Image
+                  src={craft.campaign.poster}
+                  alt="Dean Phillips campaign video by David Skadron"
+                  fill
+                  className="object-cover transition duration-500 group-hover:scale-[1.03]"
+                  sizes="(max-width: 1024px) 100vw, 35vw"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-ink via-ink/30 to-transparent" />
+                <div className="absolute inset-0 flex items-center justify-center">
+                  <span className="flex h-16 w-16 items-center justify-center rounded-full bg-paper/95 text-ink shadow-lg">
+                    ▶
+                  </span>
+                </div>
+                <div className="absolute bottom-0 left-0 p-5">
+                  <p className="text-sm text-paper-soft">Viral campaign video on X</p>
+                  <p className="mt-1 text-paper">Watch the cut →</p>
+                </div>
+              </div>
+            </a>
           </Reveal>
         </div>
       </div>

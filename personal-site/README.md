@@ -64,6 +64,25 @@ npx vercel --prod
 
 ## Assets
 
-Wix media was downloaded into `public/images/` so the site does not depend on `static.wixstatic.com` after you leave Wix. Product screenshots for SkadApp / BluWorld live under `public/images/skadapp` and `public/images/bluworld`.
+Wix media was downloaded into `public/images/` so the site does not depend on `static.wixstatic.com` after you leave Wix.
 
-YouTube embeds from the old Wix homepage could not be resolved to public video IDs at build time; film stills are used in the Craft section. Drop real YouTube IDs into `content/story.ts` later if you want embeds.
+### Real product screenshots (replace CSS mocks)
+
+Chat image attachments are not always written to disk in this environment. Until the real PNGs are in place, SkadApp Toto + BluWorld side-quest/events use faithful CSS phone mocks (not AI images). The BluWorld map (`map-home.png`) and globe are real assets from Wix.
+
+Drop these **exact filenames** then rebuild:
+
+```text
+public/images/skadapp/toto-listening.png   # Toto AI listening screen
+public/images/skadapp/logo.png             # Skadron Animal Hospital logo
+public/images/bluworld/sidequest.png       # BluWorld home + State Street quest
+public/images/bluworld/events.png          # BluWorld Madison events feed
+```
+
+Then switch `OriginSkadApp` / `BluWorld` from the mock components to `<Image src=...>` (or ask the agent to swap them once the files exist).
+
+### Embedded media (live)
+
+- Short film *Ice Cold Nikes*: `https://youtu.be/bF0vgQVvVr8`
+- Ice cream news segment: `https://youtu.be/wdv0C_SIBFY`
+- Dean Phillips campaign video: `https://x.com/DavidSkadron/status/1751667940783476808`

@@ -3,6 +3,7 @@
 import Image from "next/image";
 import { howIMove } from "@/content/story";
 import { Reveal } from "@/components/Motion/Reveal";
+import { YouTubeEmbed } from "@/components/YouTubeEmbed";
 
 export function HowIMove() {
   return (
@@ -21,6 +22,8 @@ export function HowIMove() {
         <div className="mt-16 space-y-16 md:space-y-24">
           {howIMove.beats.map((beat, index) => {
             const reverse = index % 2 === 1;
+            const hasYoutube = "youtubeId" in beat && Boolean(beat.youtubeId);
+
             return (
               <Reveal key={beat.title}>
                 <article
@@ -28,16 +31,23 @@ export function HowIMove() {
                     reverse ? "md:[&>*:first-child]:order-2" : ""
                   }`}
                 >
-                  <div className="relative aspect-[16/11] overflow-hidden rounded-[1.25rem]">
-                    <Image
-                      src={beat.image}
-                      alt=""
-                      fill
-                      className="object-cover"
-                      sizes="(max-width: 768px) 100vw, 50vw"
+                  {hasYoutube ? (
+                    <YouTubeEmbed
+                      videoId={beat.youtubeId as string}
+                      title={beat.title}
                     />
-                    <div className="absolute inset-0 bg-gradient-to-t from-ink/50 to-transparent" />
-                  </div>
+                  ) : (
+                    <div className="relative aspect-[16/11] overflow-hidden rounded-[1.25rem]">
+                      <Image
+                        src={beat.image}
+                        alt=""
+                        fill
+                        className="object-cover"
+                        sizes="(max-width: 768px) 100vw, 50vw"
+                      />
+                      <div className="absolute inset-0 bg-gradient-to-t from-ink/50 to-transparent" />
+                    </div>
+                  )}
                   <div>
                     <p className="text-sm text-mist">0{index + 1}</p>
                     <h3 className="font-display mt-3 text-3xl tracking-tight text-paper">
@@ -46,6 +56,19 @@ export function HowIMove() {
                     <p className="mt-4 text-base leading-relaxed text-paper-soft md:text-lg">
                       {beat.body}
                     </p>
+                    {"url" in beat && beat.url ? (
+                      <a
+                        href={beat.url}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="mt-5 inline-flex text-sm text-accent-soft transition hover:text-paper"
+                      >
+                        {"linkLabel" in beat && beat.linkLabel
+                          ? beat.linkLabel
+                          : "Open link"}{" "}
+                        →
+                      </a>
+                    ) : null}
                   </div>
                 </article>
               </Reveal>

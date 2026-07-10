@@ -2,6 +2,7 @@ export const site = {
   name: "David Skadron",
   email: "hello@davidskad.com",
   linkedin: "https://www.linkedin.com/in/davidskadron/",
+  x: "https://x.com/DavidSkadron",
   domain: "davidskad.com",
 } as const;
 
@@ -38,6 +39,8 @@ export const origin = {
       "A voice assistant clinicians can ask anything — about a patient, a protocol, a next step — without leaving the moment of care.",
     image: "/images/skadapp/toto-listening.png",
     imageAlt: "SkadApp Toto AI listening interface",
+    logo: "/images/skadapp/logo.png",
+    logoAlt: "Skadron Animal Hospital logo",
   },
 } as const;
 
@@ -74,16 +77,15 @@ export const craft = {
   film: {
     title: "Ice Cold Nikes",
     line: "Wrote, produced, and directed. Short Film Production Award — University of Wisconsin–Madison Film Festival.",
-    stills: [
-      "/images/craft/film-1.jpg",
-      "/images/craft/film-2.jpg",
-      "/images/craft/film-3.jpg",
-      "/images/craft/film-4.jpg",
-    ],
+    youtubeId: "bF0vgQVvVr8",
+    url: "https://youtu.be/bF0vgQVvVr8",
+    poster: "/images/craft/ice-cold-nikes-thumb.jpg",
   },
   campaign: {
     title: "Millions of views from Madison",
     line: "While interning for Congressman Dean Phillips and later supporting his presidential campaign, I couldn’t be in New Hampshire. I stayed a student in Madison, taught myself video editing, and made campaign videos that reached millions of views.",
+    xUrl: "https://x.com/DavidSkadron/status/1751667940783476808",
+    poster: "/images/craft/campaign-poster.jpg",
   },
 } as const;
 
@@ -94,18 +96,23 @@ export const howIMove = {
   beats: [
     {
       title: "Ice cream for every dining hall",
-      body: "Freshman year I started with a dorm whiteboard tally, then a petition that grew past 800 signatures. Today there are ice cream machines in every UW–Madison dining hall.",
-      image: "/images/craft/film-1.jpg",
+      body: "Freshman year I started with a dorm whiteboard tally, then a petition that grew past 800 signatures. Today there are ice cream machines in every UW–Madison dining hall — and local news covered the win.",
+      image: "/images/media/ice-cream-news-thumb.jpg",
+      youtubeId: "wdv0C_SIBFY",
+      url: "https://youtu.be/wdv0C_SIBFY",
+      linkLabel: "Watch the news segment",
     },
     {
       title: "Congress, then craft under constraint",
       body: "As a District Ambassador in Congressman Dean Phillips’ office I briefed issues, helped constituents, and coordinated community events — then turned distance into a media skill when the campaign needed video.",
-      image: "/images/craft/film-2.jpg",
+      image: "/images/craft/campaign-poster.jpg",
+      url: "https://x.com/DavidSkadron/status/1751667940783476808",
+      linkLabel: "Watch the viral campaign video",
     },
     {
       title: "Leadership when community needed it",
       body: "After October 7th, I stepped up as a leader in the Jewish community on campus — organizing, speaking, and showing up when people needed steadiness under pressure.",
-      image: "/images/craft/film-3.jpg",
+      image: "/images/craft/film-2.jpg",
     },
   ],
 } as const;

@@ -1,8 +1,8 @@
 "use client";
 
-import Image from "next/image";
 import { origin } from "@/content/story";
 import { Reveal } from "@/components/Motion/Reveal";
+import { SkadAppLogo, TotoListeningScreen } from "@/components/mocks/SkadAppScreens";
 
 export function OriginSkadApp() {
   return (
@@ -22,7 +22,10 @@ export function OriginSkadApp() {
               </Reveal>
             ))}
           </div>
-          <Reveal delay={0.15} className="mt-10 border-l border-accent/40 pl-5">
+          <Reveal delay={0.1} className="mt-8 max-w-sm">
+            <SkadAppLogo />
+          </Reveal>
+          <Reveal delay={0.15} className="mt-8 border-l border-accent/40 pl-5">
             <p className="text-sm uppercase tracking-[0.18em] text-mist">
               {origin.product.name} · {origin.product.feature}
             </p>
@@ -31,16 +34,7 @@ export function OriginSkadApp() {
         </div>
 
         <Reveal delay={0.1} className="mx-auto w-full max-w-[320px] lg:max-w-[360px]">
-          <div className="phone-frame">
-            <Image
-              src={origin.product.image}
-              alt={origin.product.imageAlt}
-              width={720}
-              height={1480}
-              className="h-auto w-full"
-              sizes="(max-width: 768px) 80vw, 360px"
-            />
-          </div>
+          <TotoListeningScreen />
         </Reveal>
       </div>
     </section>
