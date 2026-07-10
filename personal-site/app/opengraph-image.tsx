@@ -44,7 +44,6 @@ export default async function Image() {
           background: "#07090d",
         }}
       >
-        {/* Portrait — cropped like the homepage hero */}
         <img
           src={portraitSrc}
           alt=""
@@ -52,41 +51,57 @@ export default async function Image() {
           height={630}
           style={{
             position: "absolute",
-            inset: 0,
+            top: 0,
+            left: 0,
             width: "100%",
             height: "100%",
             objectFit: "cover",
-            objectPosition: "72% 58%",
+            objectPosition: "74% 78%",
           }}
         />
 
-        {/* Homepage-style shading — strong enough for OG preview contrast */}
+        {/* Left shade — homepage ink wash */}
         <div
           style={{
             position: "absolute",
-            inset: 0,
-            background:
-              "linear-gradient(90deg, #07090d 0%, #07090d 28%, rgba(7,9,13,0.82) 48%, rgba(7,9,13,0.35) 70%, rgba(7,9,13,0.15) 100%)",
-          }}
-        />
-        <div
-          style={{
-            position: "absolute",
-            inset: 0,
-            background:
-              "linear-gradient(0deg, #07090d 0%, rgba(7,9,13,0.75) 35%, rgba(7,9,13,0.2) 65%, transparent 100%)",
-          }}
-        />
-        <div
-          style={{
-            position: "absolute",
-            inset: 0,
-            background:
-              "radial-gradient(ellipse 65% 50% at 15% 0%, rgba(61,139,253,0.14), transparent 55%)",
+            top: 0,
+            left: 0,
+            width: "100%",
+            height: "100%",
+            display: "flex",
+            backgroundImage:
+              "linear-gradient(90deg, #07090d 0%, rgba(7,9,13,0.92) 34%, rgba(7,9,13,0.55) 55%, rgba(7,9,13,0.2) 78%, transparent 100%)",
           }}
         />
 
-        {/* Copy — matches hero hierarchy */}
+        {/* Bottom shade */}
+        <div
+          style={{
+            position: "absolute",
+            top: 0,
+            left: 0,
+            width: "100%",
+            height: "100%",
+            display: "flex",
+            backgroundImage:
+              "linear-gradient(0deg, #07090d 0%, rgba(7,9,13,0.85) 28%, rgba(7,9,13,0.35) 55%, transparent 100%)",
+          }}
+        />
+
+        {/* Soft blue atmosphere */}
+        <div
+          style={{
+            position: "absolute",
+            top: 0,
+            left: 0,
+            width: "100%",
+            height: "100%",
+            display: "flex",
+            backgroundImage:
+              "radial-gradient(ellipse 70% 55% at 18% 0%, rgba(61,139,253,0.18), transparent 55%)",
+          }}
+        />
+
         <div
           style={{
             position: "relative",
