@@ -31,12 +31,6 @@ export function OriginSkadApp() {
               </Reveal>
             ))}
           </div>
-          <Reveal delay={0.15} className="mt-8 border-l border-skad/50 pl-5">
-            <p className="text-sm uppercase tracking-[0.18em] text-skad-soft">
-              {origin.product.name} · {origin.product.feature}
-            </p>
-            <p className="mt-3 max-w-md text-paper-soft">{origin.product.featureLine}</p>
-          </Reveal>
         </div>
 
         <Reveal delay={0.1} className="mx-auto w-full max-w-[320px] lg:mx-0 lg:ml-auto lg:max-w-[360px]">
@@ -50,6 +44,12 @@ export function OriginSkadApp() {
               sizes="(max-width: 1024px) 70vw, 360px"
               priority
             />
+          </div>
+          <div className="mt-5 border-l border-skad/50 pl-5">
+            <p className="text-sm uppercase tracking-[0.18em] text-skad-soft">
+              {origin.product.name} · {origin.product.feature}
+            </p>
+            <p className="mt-3 text-paper-soft">{origin.product.featureLine}</p>
           </div>
         </Reveal>
       </div>
