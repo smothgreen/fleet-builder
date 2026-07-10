@@ -56,17 +56,17 @@ export default async function Image() {
             width: "100%",
             height: "100%",
             objectFit: "cover",
-            objectPosition: "72% 44%",
+            objectPosition: "72% 58%",
           }}
         />
 
-        {/* Homepage-style shading */}
+        {/* Homepage-style shading — strong enough for OG preview contrast */}
         <div
           style={{
             position: "absolute",
             inset: 0,
             background:
-              "linear-gradient(to right, #07090d 0%, rgba(7,9,13,0.82) 42%, rgba(7,9,13,0.28) 72%, transparent 100%)",
+              "linear-gradient(90deg, #07090d 0%, #07090d 28%, rgba(7,9,13,0.82) 48%, rgba(7,9,13,0.35) 70%, rgba(7,9,13,0.15) 100%)",
           }}
         />
         <div
@@ -74,7 +74,7 @@ export default async function Image() {
             position: "absolute",
             inset: 0,
             background:
-              "linear-gradient(to top, #07090d 0%, rgba(7,9,13,0.55) 38%, rgba(7,9,13,0.12) 70%, transparent 100%)",
+              "linear-gradient(0deg, #07090d 0%, rgba(7,9,13,0.75) 35%, rgba(7,9,13,0.2) 65%, transparent 100%)",
           }}
         />
         <div
@@ -82,7 +82,7 @@ export default async function Image() {
             position: "absolute",
             inset: 0,
             background:
-              "radial-gradient(ellipse 70% 55% at 18% -8%, rgba(61,139,253,0.18), transparent 55%)",
+              "radial-gradient(ellipse 65% 50% at 15% 0%, rgba(61,139,253,0.14), transparent 55%)",
           }}
         />
 
