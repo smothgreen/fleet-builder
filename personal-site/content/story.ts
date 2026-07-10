@@ -16,7 +16,7 @@ export const nav = [
 
 export const hero = {
   name: "David Skadron",
-  thesis: "I see a problem and I find the solution.",
+  thesis: "I see a problem and find the solution.",
   supporting:
     "AI for veterinarians. A social network for real-life adventure. Impact seen by millions.",
   cta: "Work with me",

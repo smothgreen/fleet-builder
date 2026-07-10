@@ -22,9 +22,9 @@ export default async function Image() {
   );
   const portraitSrc = `data:image/jpeg;base64,${portrait.toString("base64")}`;
 
-  const eyebrow = "Builder · Founder · Doer";
+  const eyebrow = "Builder · Founder · Human";
   const name = "David Skadron";
-  const thesis = "I see a problem and I find the solution.";
+  const thesis = "I see a problem and find the solution.";
   const fontText = `${eyebrow}${name}${thesis}`;
 
   const [displayFont, bodyFont] = await Promise.all([
