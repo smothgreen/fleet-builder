@@ -61,7 +61,9 @@ export function Hero() {
           style={{ animationDelay: "480ms" }}
         >
           <a
-            href={`mailto:${site.email}`}
+            href={site.x}
+            target="_blank"
+            rel="noopener noreferrer"
             className="rounded-full bg-paper px-6 py-3 text-sm font-medium text-ink transition hover:bg-accent-soft"
           >
             {hero.cta}

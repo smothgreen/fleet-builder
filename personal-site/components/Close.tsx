@@ -20,7 +20,9 @@ export function Close() {
           </p>
           <div className="mt-10 flex flex-wrap items-center justify-center gap-4">
             <a
-              href={`mailto:${site.email}`}
+              href={site.x}
+              target="_blank"
+              rel="noopener noreferrer"
               className="rounded-full bg-paper px-7 py-3.5 text-sm font-medium text-ink transition hover:bg-accent-soft"
             >
               {close.ctaPrimary}

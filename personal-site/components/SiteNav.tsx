@@ -40,7 +40,9 @@ export function SiteNav() {
           ))}
         </nav>
         <a
-          href={`mailto:${site.email}`}
+          href={site.x}
+          target="_blank"
+          rel="noopener noreferrer"
           className="rounded-full border border-line px-4 py-2 text-sm text-paper transition hover:border-accent-soft hover:text-accent-soft"
         >
           Contact

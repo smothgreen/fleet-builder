@@ -2,7 +2,7 @@ export const site = {
   name: "David Skadron",
   email: "hello@davidskad.com",
   linkedin: "https://www.linkedin.com/in/davidskadron/",
-  x: "https://x.com/DavidSkadron",
+  x: "https://x.com/davidskadron?s=21",
   domain: "davidskad.com",
 } as const;
 
