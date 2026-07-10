@@ -156,6 +156,6 @@ export const close = {
   id: "contact",
   title: "Let’s build a better future.",
   body: "I’m looking for ambitious product teams that care about craft, clear thinking, and real human outcomes. If that sounds like your team, I’d love to talk.",
-  ctaPrimary: "Email David",
+  ctaPrimary: "Message me",
   ctaSecondary: "LinkedIn",
 } as const;
