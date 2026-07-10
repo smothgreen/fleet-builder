@@ -133,31 +133,31 @@ body {
 .skad-logo-glow::before {
   content: "";
   position: absolute;
-  inset: -8px;
+  inset: -6px;
   z-index: 0;
-  border-radius: 1.35rem;
-  background: rgba(196, 181, 253, 0.22);
+  border-radius: 1.25rem;
+  background: rgba(109, 40, 217, 0.45);
   box-shadow:
-    0 0 22px 8px rgba(196, 181, 253, 0.32),
-    0 0 44px 16px rgba(167, 139, 250, 0.24),
-    0 0 70px 26px rgba(139, 92, 246, 0.14);
-  filter: blur(16px);
+    0 0 16px 5px rgba(139, 92, 246, 0.55),
+    0 0 32px 12px rgba(124, 58, 237, 0.4),
+    0 0 48px 18px rgba(91, 33, 182, 0.28);
+  filter: blur(12px);
   transform-origin: center;
-  animation: skad-breathe 4.8s ease-in-out infinite;
+  animation: skad-breathe 4.6s ease-in-out infinite;
   pointer-events: none;
 }
 
 @keyframes skad-breathe {
   0%,
   100% {
-    opacity: 0.5;
-    transform: scale(0.96);
-    filter: blur(14px);
+    opacity: 0.65;
+    transform: scale(0.98);
+    filter: blur(10px);
   }
   50% {
-    opacity: 0.95;
-    transform: scale(1.08);
-    filter: blur(20px);
+    opacity: 1;
+    transform: scale(1.04);
+    filter: blur(14px);
   }
 }
 
