@@ -101,7 +101,7 @@ export const howIMove = {
       linkLabel: "Watch the news segment",
     },
     {
-      title: "A long-shot campaign I still had to join",
+      title: "A long-shot campaign I had to join",
       body: "In the 2024 election, Joe Biden’s approval was collapsing and 77% of Americans wanted another choice. Congressman Dean Phillips was the lone Democrat calling on him to step aside for a younger nominee — even though most people still didn’t know his name. It was a long shot, but I felt like I had to help. The campaign was on the ground in New Hampshire while I was in Madison, so I taught myself video editing and found a new way to contribute. The content I made reached over 4 million views.",
       image: "/images/story/dean-phillips-madison.png",
       imageAlt: "David Skadron posting a Dean Phillips for President flyer in Madison",
