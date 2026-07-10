@@ -5,7 +5,7 @@ import { Reveal } from "@/components/Motion/Reveal";
 
 export function Experience() {
   return (
-    <section className="section-pad relative py-16 md:py-20">
+    <section className="section-pad relative isolate border-t border-line bg-ink-elevated py-28 md:py-36">
       <div className="mx-auto grid max-w-6xl gap-16 lg:grid-cols-[1fr_1fr]">
         <div>
           <Reveal>

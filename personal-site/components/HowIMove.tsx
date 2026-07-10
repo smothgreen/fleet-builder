@@ -9,7 +9,7 @@ export function HowIMove() {
   return (
     <section
       id={howIMove.id}
-      className="section-pad relative border-t border-line bg-ink-elevated py-28 md:py-36"
+      className="section-pad relative isolate border-t border-line bg-ink-elevated py-28 md:py-36"
     >
       <div className="mx-auto max-w-6xl">
         <Reveal>
