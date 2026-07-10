@@ -25,6 +25,13 @@ export const metadata: Metadata = {
     url: "https://www.davidskad.com",
     siteName: "David Skadron",
     type: "website",
+    locale: "en_US",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "David Skadron",
+    description:
+      "AI for veterinarians. A social network for real-life adventure. Stories seen by millions.",
   },
 };
 
