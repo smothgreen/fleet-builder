@@ -3,10 +3,6 @@
 import Image from "next/image";
 import { bluworld } from "@/content/story";
 import { Reveal } from "@/components/Motion/Reveal";
-import {
-  BluWorldEventsScreen,
-  BluWorldSideQuestScreen,
-} from "@/components/mocks/BluWorldScreens";
 import { motion, useReducedMotion, useScroll, useTransform } from "framer-motion";
 import { useRef } from "react";
 
@@ -57,7 +53,16 @@ export function BluWorld() {
         <div className="mt-16 grid gap-8 md:grid-cols-3">
           <Reveal>
             <figure className="mx-auto max-w-[280px] md:max-w-none">
-              <BluWorldSideQuestScreen />
+              <div className="phone-frame">
+                <Image
+                  src="/images/bluworld/sidequest.png"
+                  alt="BluWorld home with State Street side quest"
+                  width={501}
+                  height={1024}
+                  className="h-auto w-full"
+                  sizes="(max-width: 768px) 70vw, 280px"
+                />
+              </div>
               <figcaption className="mt-4 text-center text-sm text-mist">
                 Side quests — cool things to do in any city
               </figcaption>
@@ -65,7 +70,16 @@ export function BluWorld() {
           </Reveal>
           <Reveal delay={0.08}>
             <figure className="mx-auto max-w-[280px] md:max-w-none">
-              <BluWorldEventsScreen />
+              <div className="phone-frame">
+                <Image
+                  src="/images/bluworld/events.png"
+                  alt="BluWorld Madison events feed"
+                  width={507}
+                  height={1024}
+                  className="h-auto w-full"
+                  sizes="(max-width: 768px) 70vw, 280px"
+                />
+              </div>
               <figcaption className="mt-4 text-center text-sm text-mist">
                 Events that pull you outside
               </figcaption>

@@ -1,8 +1,8 @@
 "use client";
 
+import Image from "next/image";
 import { origin } from "@/content/story";
 import { Reveal } from "@/components/Motion/Reveal";
-import { SkadAppLogo, TotoListeningScreen } from "@/components/mocks/SkadAppScreens";
 
 export function OriginSkadApp() {
   return (
@@ -23,7 +23,14 @@ export function OriginSkadApp() {
             ))}
           </div>
           <Reveal delay={0.1} className="mt-8 max-w-sm">
-            <SkadAppLogo />
+            <Image
+              src="/images/skadapp/logo.png"
+              alt="Skadron Animal Hospital"
+              width={1024}
+              height={1024}
+              className="h-auto w-full max-w-[280px] rounded-2xl"
+              sizes="280px"
+            />
           </Reveal>
           <Reveal delay={0.15} className="mt-8 border-l border-accent/40 pl-5">
             <p className="text-sm uppercase tracking-[0.18em] text-mist">
@@ -34,7 +41,17 @@ export function OriginSkadApp() {
         </div>
 
         <Reveal delay={0.1} className="mx-auto w-full max-w-[320px] lg:max-w-[360px]">
-          <TotoListeningScreen />
+          <div className="phone-frame">
+            <Image
+              src="/images/skadapp/toto-listening.png"
+              alt="Toto AI listening screen in SkadApp"
+              width={1206}
+              height={2470}
+              className="h-auto w-full"
+              sizes="(max-width: 1024px) 70vw, 360px"
+              priority
+            />
+          </div>
         </Reveal>
       </div>
     </section>
