@@ -10,19 +10,21 @@ export function OriginSkadApp() {
       <div className="mx-auto grid max-w-6xl items-start gap-12 lg:grid-cols-[1.05fr_0.95fr] lg:gap-16">
         <div className="flex flex-col">
           <Reveal>
-            <p className="eyebrow text-skad-soft">{origin.eyebrow}</p>
-            <h2 className="font-display mt-5 max-w-xl text-4xl leading-tight tracking-tight text-paper md:text-5xl">
+            <div className="max-w-xl">
               <Image
                 src={origin.product.logo}
                 alt={origin.product.logoAlt}
                 width={1024}
                 height={1024}
-                className="mb-5 h-auto w-[160px] rounded-2xl sm:mb-6 sm:w-[200px] md:w-[220px]"
+                className="mx-auto mb-5 block h-auto w-[160px] rounded-2xl sm:mb-6 sm:w-[200px] md:mx-0 md:w-[220px]"
                 sizes="220px"
               />
-              <span className="block">{origin.titleLines[0]}</span>
-              <span className="mt-2 block text-skad-soft">{origin.titleLines[1]}</span>
-            </h2>
+              <p className="eyebrow text-skad-soft">{origin.eyebrow}</p>
+              <h2 className="font-display mt-5 text-4xl leading-tight tracking-tight text-paper md:text-5xl">
+                <span className="block">{origin.titleLines[0]}</span>
+                <span className="mt-2 block text-skad-soft">{origin.titleLines[1]}</span>
+              </h2>
+            </div>
           </Reveal>
           <div className="mt-8 max-w-xl space-y-5 text-base leading-relaxed text-paper-soft md:text-lg">
             {origin.body.map((paragraph) => (
