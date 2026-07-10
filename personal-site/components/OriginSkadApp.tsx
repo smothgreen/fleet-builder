@@ -16,7 +16,7 @@ export function OriginSkadApp() {
                 alt={origin.product.logoAlt}
                 width={1024}
                 height={1024}
-                className="mx-auto mb-5 block h-auto w-[160px] rounded-2xl sm:mb-6 sm:w-[200px] md:mx-0 md:w-[220px]"
+                className="mx-auto mb-5 block h-auto w-[160px] rounded-2xl sm:mb-6 sm:w-[200px] md:w-[220px]"
                 sizes="220px"
               />
               <p className="eyebrow text-skad-soft">{origin.eyebrow}</p>
