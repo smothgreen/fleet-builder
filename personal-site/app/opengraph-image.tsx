@@ -24,7 +24,7 @@ export default async function Image() {
 
   const eyebrow = "Builder · Founder · Storyteller";
   const name = "David Skadron";
-  const thesis = "I build products that give people their time and world back.";
+  const thesis = "I see a problem and I build.";
   const fontText = `${eyebrow}${name}${thesis}`;
 
   const [displayFont, bodyFont] = await Promise.all([

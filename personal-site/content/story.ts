@@ -16,10 +16,9 @@ export const nav = [
 
 export const hero = {
   name: "David Skadron",
-  thesis:
-    "I build products that give people their time and world back.",
+  thesis: "I see a problem and I build.",
   supporting:
-    "AI for veterinarians. A social network for real-life adventure. Stories seen by millions.",
+    "AI for veterinarians. A social network for real-life adventure. Impact seen by millions.",
   cta: "Work with me",
   portrait: "/images/hero/portrait.jpg",
 } as const;
@@ -78,7 +77,7 @@ export const bluworld = {
 export const craft = {
   id: "craft",
   eyebrow: "Craft",
-  title: "Stories that earn attention.",
+  title: "Stories I've made.",
   film: {
     title: "Ice Cold Nikes",
     line: "Wrote, produced, and directed. Short Film Production Award — University of Wisconsin–Madison Film Festival.",
