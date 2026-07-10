@@ -13,7 +13,18 @@ export function BluWorld() {
       className="section-pad relative isolate overflow-hidden bg-ink pt-28 pb-28 md:pt-36 md:pb-36"
     >
       <div className="relative mx-auto grid max-w-4xl gap-x-10 gap-y-12 sm:grid-cols-2 lg:gap-x-14 lg:gap-y-16">
-        <Reveal>
+        <Reveal className="mx-auto flex w-full max-w-[320px] items-center sm:mx-0 sm:max-w-none sm:self-center">
+          <Image
+            src={bluworld.globe}
+            alt="BluWorld globe"
+            width={840}
+            height={840}
+            className="aspect-square h-auto w-full rounded-[2.5rem] shadow-[0_0_60px_-12px_rgba(56,189,248,0.35)]"
+            sizes="(max-width: 640px) 320px, 420px"
+          />
+        </Reveal>
+
+        <Reveal delay={0.08}>
           <p className="eyebrow">{bluworld.eyebrow}</p>
           <h2 className="font-display mt-5 text-4xl tracking-tight text-paper md:text-5xl">
             {bluworld.title}
@@ -33,20 +44,6 @@ export function BluWorld() {
             <AppleIcon />
             Download on the App Store
           </a>
-        </Reveal>
-
-        <Reveal
-          delay={0.08}
-          className="mx-auto flex w-full max-w-[220px] items-center sm:mx-0 sm:max-w-[240px] sm:justify-self-end"
-        >
-          <Image
-            src={bluworld.globe}
-            alt="BluWorld globe"
-            width={840}
-            height={840}
-            className="aspect-square h-auto w-full rounded-[2.5rem] shadow-[0_0_60px_-12px_rgba(56,189,248,0.35)]"
-            sizes="(max-width: 640px) 220px, 240px"
-          />
         </Reveal>
 
         {[sideQuestScreen, eventsScreen].map((screen, index) => (
