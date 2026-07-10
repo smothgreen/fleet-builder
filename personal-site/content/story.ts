@@ -9,17 +9,17 @@ export const site = {
 export const nav = [
   { id: "skadapp", label: "SkadApp" },
   { id: "bluworld", label: "BluWorld" },
-  { id: "craft", label: "Craft" },
   { id: "story", label: "Story" },
+  { id: "craft", label: "Craft" },
   { id: "contact", label: "Contact" },
 ] as const;
 
 export const hero = {
   name: "David Skadron",
   thesis:
-    "I build products that give people their time and their world back.",
+    "I build products that give people their time and world back.",
   supporting:
-    "AI for veterinarians. A social network for real-life adventure. Media that moves millions.",
+    "AI for veterinarians. A social network for real-life adventure. Stories seen by millions.",
   cta: "Work with me",
   portrait: "/images/hero/portrait.jpg",
 } as const;
@@ -27,9 +27,13 @@ export const hero = {
 export const origin = {
   id: "skadapp",
   eyebrow: "Origin",
-  title: "A family of veterinarians. Software that wastes their day.",
+  title: "Veterinary care runs in my family. So does frustration with clinic software.",
+  titleLines: [
+    "Veterinary care runs in my family.",
+    "So does frustration with clinic software.",
+  ],
   body: [
-    "Both of my parents and my grandpa are veterinarians. I grew up watching them pour everything into animals — and lose hours to ugly clinic software that fights them at every click.",
+    "My parents and grandfather are veterinarians. I grew up watching them care deeply for animals — then lose hours to software that made every task harder.",
     "I wanted to build something that gives that time back. So I started SkadApp: an AI veterinary super-app that cuts busywork so doctors can spend more time helping animals.",
   ],
   product: {
@@ -59,7 +63,7 @@ export const bluworld = {
     {
       src: "/images/bluworld/events.png",
       alt: "BluWorld events feed for Madison",
-      caption: "Events that pull you outside",
+      caption: "Find events worth leaving home for",
     },
     {
       src: "/images/bluworld/map-home.png",
@@ -68,12 +72,13 @@ export const bluworld = {
     },
   ],
   globe: "/images/bluworld/globe.png",
+  appStoreUrl: "https://apps.apple.com/us/app/bluworld/id6748724202",
 } as const;
 
 export const craft = {
   id: "craft",
   eyebrow: "Craft",
-  title: "Storytelling as a product skill.",
+  title: "Stories that earn attention.",
   film: {
     title: "Ice Cold Nikes",
     line: "Wrote, produced, and directed. Short Film Production Award — University of Wisconsin–Madison Film Festival.",
@@ -81,38 +86,28 @@ export const craft = {
     url: "https://youtu.be/bF0vgQVvVr8",
     poster: "/images/craft/ice-cold-nikes-thumb.jpg",
   },
-  campaign: {
-    title: "Millions of views from Madison",
-    line: "While interning for Congressman Dean Phillips and later supporting his presidential campaign, I couldn’t be in New Hampshire. I stayed a student in Madison, taught myself video editing, and made campaign videos that reached millions of views.",
-    xUrl: "https://x.com/DavidSkadron/status/1751667940783476808",
-    poster: "/images/craft/campaign-poster.jpg",
-  },
 } as const;
 
 export const howIMove = {
   id: "story",
   eyebrow: "How I move",
-  title: "I notice what’s broken — then I organize people to fix it.",
+  title: "When I see a problem, I move.",
   beats: [
     {
       title: "Ice cream for every dining hall",
-      body: "Freshman year I started with a dorm whiteboard tally, then a petition that grew past 800 signatures. Today there are ice cream machines in every UW–Madison dining hall — and local news covered the win.",
-      image: "/images/media/ice-cream-news-thumb.jpg",
-      youtubeId: "wdv0C_SIBFY",
+      body: "My freshman year of college I started a petition, got 800 signatures, and now every dining hall on the University of Wisconsin–Madison campus has ice cream machines.",
+      image: "/images/story/ice-cream-dining-hall.png",
+      imageAlt: "David Skadron with soft-serve ice cream in a UW–Madison dining hall",
       url: "https://youtu.be/wdv0C_SIBFY",
       linkLabel: "Watch the news segment",
     },
     {
-      title: "Congress, then craft under constraint",
-      body: "As a District Ambassador in Congressman Dean Phillips’ office I briefed issues, helped constituents, and coordinated community events — then turned distance into a media skill when the campaign needed video.",
-      image: "/images/craft/campaign-poster.jpg",
+      title: "A long-shot campaign I still had to join",
+      body: "In the 2024 election, Joe Biden’s approval was collapsing and 77% of Americans wanted another choice. Congressman Dean Phillips was the lone Democrat calling on him to step aside for a younger nominee — even though most people still didn’t know his name. It was a long shot, but I felt like I had to help. The campaign was on the ground in New Hampshire while I was in Madison, so I taught myself video editing and found a new way to contribute. The content I made reached over 4 million views.",
+      image: "/images/story/dean-phillips-madison.png",
+      imageAlt: "David Skadron posting a Dean Phillips for President flyer in Madison",
       url: "https://x.com/DavidSkadron/status/1751667940783476808",
-      linkLabel: "Watch the viral campaign video",
-    },
-    {
-      title: "Leadership when community needed it",
-      body: "After October 7th, I stepped up as a leader in the Jewish community on campus — organizing, speaking, and showing up when people needed steadiness under pressure.",
-      image: "/images/craft/film-2.jpg",
+      linkLabel: "Watch one of the viral campaign videos",
     },
   ],
 } as const;
@@ -130,19 +125,19 @@ export const experience = {
       role: "Operations Intern",
       org: "Augeo Engagement Technologies",
       year: "2023",
-      line: "Worked with executives on operations insight and competitor analysis.",
+      line: "Worked with executives on operational strategy and competitive research.",
     },
     {
       role: "District Ambassador",
       org: "Office of Congressman Dean Phillips",
       year: "2022",
-      line: "Legislative research, constituent support, and community events.",
+      line: "Researched policy, supported constituents, and helped run community events.",
     },
     {
-      role: "Elementary School Aid",
+      role: "Elementary School Aide",
       org: "Nir Etzion Elementary School",
       year: "2021",
-      line: "Taught English daily and helped keep classrooms calm and productive.",
+      line: "Taught English and helped create calm, productive classrooms.",
     },
   ],
 } as const;
@@ -150,19 +145,18 @@ export const experience = {
 export const education = {
   school: "University of Wisconsin–Madison",
   detail:
-    "Double major in Information Science and Communication Arts. Certificates in Entrepreneurship, Digital Studies, and Sports Communication.",
+    "Double major in Information Science and Communication Arts, with certificates in Entrepreneurship, Digital Studies, and Sports Communication.",
   highlights: [
     "Outstanding Project — Badger Buildfest Hackathon",
-    "Short Film Production Award — UW–Madison Film Festival",
-    "3rd — Minnesota statewide high school debate",
-    "National Honor Society President",
+    "3rd place — Minnesota State High School Debate Tournament",
+    "President — National Honor Society",
   ],
 } as const;
 
 export const close = {
   id: "contact",
-  title: "Building toward ambitious product teams.",
-  body: "I’m looking for places that care about craft, systems, and human outcomes — companies like SpaceX AI and Apple. If you’re hiring builders who ship with taste, I’d love to talk.",
+  title: "Let’s build a better future.",
+  body: "I’m looking for ambitious product teams that care about craft, clear thinking, and real human outcomes. If that sounds like your team, I’d love to talk.",
   ctaPrimary: "Email David",
   ctaSecondary: "LinkedIn",
 } as const;

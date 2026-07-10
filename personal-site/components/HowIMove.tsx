@@ -37,15 +37,14 @@ export function HowIMove() {
                       title={beat.title}
                     />
                   ) : (
-                    <div className="relative aspect-[16/11] overflow-hidden rounded-[1.25rem]">
+                    <div className="relative aspect-video overflow-hidden rounded-[1.25rem]">
                       <Image
                         src={beat.image}
-                        alt=""
+                        alt={"imageAlt" in beat ? beat.imageAlt : ""}
                         fill
-                        className="object-cover"
+                        className="object-cover object-center"
                         sizes="(max-width: 768px) 100vw, 50vw"
                       />
-                      <div className="absolute inset-0 bg-gradient-to-t from-ink/50 to-transparent" />
                     </div>
                   )}
                   <div>

@@ -16,12 +16,12 @@ const body = Outfit({
 export const metadata: Metadata = {
   title: "David Skadron",
   description:
-    "I build products that give people their time and their world back — SkadApp, BluWorld, and cinematic craft.",
+    "I build products that give people their time and world back — SkadApp, BluWorld, and cinematic craft.",
   metadataBase: new URL("https://www.davidskad.com"),
   openGraph: {
     title: "David Skadron",
     description:
-      "AI for veterinarians. A social network for real-life adventure. Media that moves millions.",
+      "AI for veterinarians. A social network for real-life adventure. Stories seen by millions.",
     url: "https://www.davidskad.com",
     siteName: "David Skadron",
     type: "website",

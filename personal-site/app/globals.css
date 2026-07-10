@@ -10,6 +10,8 @@
   --accent: #3d8bfd;
   --accent-soft: #7eb6ff;
   --warm: #d4a574;
+  --skad: #8b5cf6;
+  --skad-soft: #c4b5fd;
   --line: rgba(238, 242, 247, 0.1);
   --glow: rgba(61, 139, 253, 0.22);
 }
@@ -24,6 +26,8 @@
   --color-accent: var(--accent);
   --color-accent-soft: var(--accent-soft);
   --color-warm: var(--warm);
+  --color-skad: var(--skad);
+  --color-skad-soft: var(--skad-soft);
   --color-line: var(--line);
   --font-sans: var(--font-body);
   --font-display: var(--font-display);

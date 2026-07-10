@@ -3,107 +3,99 @@
 import Image from "next/image";
 import { bluworld } from "@/content/story";
 import { Reveal } from "@/components/Motion/Reveal";
-import { motion, useReducedMotion, useScroll, useTransform } from "framer-motion";
-import { useRef } from "react";
 
 export function BluWorld() {
-  const ref = useRef<HTMLElement>(null);
-  const reduce = useReducedMotion();
-  const { scrollYProgress } = useScroll({
-    target: ref,
-    offset: ["start end", "end start"],
-  });
-  const globeY = useTransform(scrollYProgress, [0, 1], reduce ? [0, 0] : [80, -80]);
-  const globeOpacity = useTransform(scrollYProgress, [0, 0.3, 0.8], [0.15, 0.35, 0.2]);
+  const [sideQuestScreen, eventsScreen, mapScreen] = bluworld.screens;
 
   return (
     <section
       id={bluworld.id}
-      ref={ref}
       className="section-pad relative overflow-hidden border-y border-line py-28 md:py-36"
     >
-      <motion.div
-        className="pointer-events-none absolute -right-24 top-10 hidden w-[420px] opacity-40 md:block"
-        style={{ y: globeY, opacity: globeOpacity }}
-      >
-        <Image
-          src={bluworld.globe}
-          alt=""
-          width={840}
-          height={840}
-          className="h-auto w-full"
-          aria-hidden
-        />
-      </motion.div>
-
       <div className="relative mx-auto max-w-6xl">
-        <Reveal>
-          <p className="eyebrow">{bluworld.eyebrow}</p>
-          <h2 className="font-display mt-5 text-4xl tracking-tight text-paper md:text-6xl">
-            {bluworld.title}
-          </h2>
-          <p className="mt-5 max-w-2xl text-xl text-paper-soft md:text-2xl md:leading-snug">
-            {bluworld.subtitle}
-          </p>
-          <p className="mt-5 max-w-2xl text-base leading-relaxed text-mist md:text-lg">
-            {bluworld.body}
-          </p>
-        </Reveal>
-
-        <div className="mt-16 grid gap-8 md:grid-cols-3">
+        <div className="grid items-center gap-12 lg:grid-cols-[1.2fr_0.8fr] lg:gap-20">
           <Reveal>
-            <figure className="mx-auto max-w-[280px] md:max-w-none">
-              <div className="phone-frame">
-                <Image
-                  src="/images/bluworld/sidequest.png"
-                  alt="BluWorld home with State Street side quest"
-                  width={501}
-                  height={1024}
-                  className="h-auto w-full"
-                  sizes="(max-width: 768px) 70vw, 280px"
-                />
-              </div>
-              <figcaption className="mt-4 text-center text-sm text-mist">
-                Side quests — cool things to do in any city
-              </figcaption>
-            </figure>
+            <p className="eyebrow">{bluworld.eyebrow}</p>
+            <h2 className="font-display mt-5 text-4xl tracking-tight text-paper md:text-6xl">
+              {bluworld.title}
+            </h2>
+            <p className="mt-5 max-w-2xl text-xl text-paper-soft md:text-2xl md:leading-snug">
+              {bluworld.subtitle}
+            </p>
+            <p className="mt-5 max-w-2xl text-base leading-relaxed text-mist md:text-lg">
+              {bluworld.body}
+            </p>
+            <a
+              href={bluworld.appStoreUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="mt-8 inline-flex items-center gap-2 rounded-full border border-line px-5 py-2.5 text-sm text-paper-soft transition hover:border-paper hover:text-paper"
+            >
+              <AppleIcon />
+              Download on the App Store
+            </a>
           </Reveal>
-          <Reveal delay={0.08}>
-            <figure className="mx-auto max-w-[280px] md:max-w-none">
-              <div className="phone-frame">
-                <Image
-                  src="/images/bluworld/events.png"
-                  alt="BluWorld Madison events feed"
-                  width={507}
-                  height={1024}
-                  className="h-auto w-full"
-                  sizes="(max-width: 768px) 70vw, 280px"
-                />
-              </div>
-              <figcaption className="mt-4 text-center text-sm text-mist">
-                Events that pull you outside
-              </figcaption>
-            </figure>
-          </Reveal>
-          <Reveal delay={0.16}>
-            <figure className="mx-auto max-w-[280px] md:max-w-none">
-              <div className="phone-frame">
-                <Image
-                  src="/images/bluworld/map-home.png"
-                  alt="BluWorld map home screen"
-                  width={720}
-                  height={1480}
-                  className="h-auto w-full"
-                  sizes="(max-width: 768px) 70vw, 280px"
-                />
-              </div>
-              <figcaption className="mt-4 text-center text-sm text-mist">
-                A living map of adventure
-              </figcaption>
-            </figure>
+
+          <Reveal delay={0.08} className="mx-auto w-full max-w-[260px] lg:max-w-[300px]">
+            <Image
+              src={bluworld.globe}
+              alt="BluWorld globe"
+              width={840}
+              height={840}
+              className="aspect-square h-auto w-full rounded-[2.5rem] shadow-[0_0_60px_-12px_rgba(56,189,248,0.35)]"
+              sizes="(max-width: 1024px) 260px, 300px"
+            />
           </Reveal>
         </div>
+
+        <div className="mx-auto mt-16 grid max-w-3xl gap-8 sm:grid-cols-2 sm:gap-10">
+          {[sideQuestScreen, eventsScreen].map((screen, index) => (
+            <Reveal key={screen.src} delay={index * 0.08}>
+              <figure className="mx-auto w-full max-w-[300px]">
+                <div className="phone-frame">
+                  <Image
+                    src={screen.src}
+                    alt={screen.alt}
+                    width={507}
+                    height={1024}
+                    className="h-auto w-full"
+                    sizes="(max-width: 640px) 78vw, 300px"
+                  />
+                </div>
+                <figcaption className="mt-4 text-center text-sm text-mist">
+                  {screen.caption}
+                </figcaption>
+              </figure>
+            </Reveal>
+          ))}
+        </div>
+
+        <Reveal delay={0.16} className="mx-auto mt-12 max-w-3xl">
+          <figure>
+            <div className="overflow-hidden rounded-[2rem] border border-line bg-black shadow-[0_30px_80px_rgba(0,0,0,0.45)]">
+              <Image
+                src={mapScreen.src}
+                alt={mapScreen.alt}
+                width={720}
+                height={1480}
+                className="h-auto w-full"
+                sizes="(max-width: 768px) 92vw, 768px"
+              />
+            </div>
+            <figcaption className="mt-4 text-center text-sm text-mist">
+              {mapScreen.caption}
+            </figcaption>
+          </figure>
+        </Reveal>
       </div>
     </section>
+  );
+}
+
+function AppleIcon() {
+  return (
+    <svg viewBox="0 0 16 16" className="h-4 w-4" fill="currentColor" aria-hidden>
+      <path d="M12.7 8.4c0-1.7 1.4-2.5 1.5-2.6-.8-1.2-2.1-1.3-2.5-1.4-1.1-.1-2 .6-2.6.6-.6 0-1.4-.6-2.3-.6-1.2 0-2.3.7-2.9 1.8-1.2 2.2-.3 5.4.9 7.1.6.9 1.3 1.8 2.2 1.8.9 0 1.2-.6 2.3-.6s1.4.6 2.3.6c1 0 1.6-.9 2.2-1.7.7-1 1-2 1-2.1-.1 0-1.8-.7-1.8-2.9zM10.6 3.3c.5-.6.8-1.4.7-2.2-.7 0-1.5.5-2 .1-.4.5-.9 1.4-.8 2.2.8.1 1.6-.4 2.1-1.1z" />
+    </svg>
   );
 }

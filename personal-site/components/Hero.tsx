@@ -13,7 +13,7 @@ export function Hero() {
     offset: ["start start", "end start"],
   });
   const imageY = useTransform(scrollYProgress, [0, 1], reduce ? [0, 0] : [0, 100]);
-  const imageScale = useTransform(scrollYProgress, [0, 1], reduce ? [1, 1] : [1.06, 1]);
+  const imageScale = useTransform(scrollYProgress, [0, 1], reduce ? [1, 1] : [1, 0.98]);
 
   return (
     <section
@@ -27,16 +27,16 @@ export function Hero() {
           alt="David Skadron on State Street in Madison"
           fill
           priority
-          className="object-cover object-[80%_28%] md:object-[75%_32%]"
+          className="object-cover object-[78%_46%] md:object-[72%_44%]"
           sizes="100vw"
         />
       </motion.div>
       <div className="absolute inset-0 bg-gradient-to-r from-ink via-ink/80 to-ink/30" />
       <div className="absolute inset-0 bg-gradient-to-t from-ink via-ink/50 to-ink/10" />
 
-      <div className="section-pad relative z-10 mx-auto w-full max-w-6xl pb-20 pt-32 md:pb-28">
+      <div className="section-pad relative z-10 mx-auto w-full max-w-6xl pb-12 pt-32 md:pb-16">
         <p className="eyebrow hero-enter mb-6" style={{ animationDelay: "80ms" }}>
-          Builder · Storyteller · Founder
+          Builder · Founder · Storyteller
         </p>
         <h1
           className="font-display hero-enter max-w-3xl text-[clamp(3.2rem,9vw,6.5rem)] leading-[0.92] tracking-[-0.03em] text-paper"

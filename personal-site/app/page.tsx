@@ -15,8 +15,8 @@ export default function Home() {
         <Hero />
         <OriginSkadApp />
         <BluWorld />
-        <Craft />
         <HowIMove />
+        <Craft />
         <Experience />
         <Close />
       </main>
