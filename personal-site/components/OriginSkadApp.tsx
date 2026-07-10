@@ -47,7 +47,7 @@ export function OriginSkadApp() {
 
         <Reveal
           delay={0.1}
-          className="mx-auto flex w-full max-w-[280px] items-center sm:max-w-[300px] lg:mx-0 lg:ml-auto lg:max-w-[320px]"
+          className="mx-auto flex w-full max-w-[320px] items-center sm:max-w-[360px] lg:mx-0 lg:ml-auto lg:max-w-[400px]"
         >
           <div className="phone-frame w-full">
             <Image
@@ -56,7 +56,7 @@ export function OriginSkadApp() {
               width={1206}
               height={2470}
               className="h-auto w-full"
-              sizes="(max-width: 1024px) 70vw, 320px"
+              sizes="(max-width: 1024px) 70vw, 400px"
               priority
             />
           </div>
