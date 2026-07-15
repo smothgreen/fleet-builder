@@ -23,7 +23,7 @@ export function Hero() {
     >
       {/* Photo — own upper band on mobile so the face clears the copy */}
       <motion.div
-        className="relative h-[52svh] w-full shrink-0 md:absolute md:inset-0 md:h-auto"
+        className="relative h-[58svh] w-full shrink-0 md:absolute md:inset-0 md:h-auto"
         style={{ y: imageY, scale: imageScale }}
       >
         <Image
@@ -34,13 +34,13 @@ export function Hero() {
           className="object-cover object-[78%_28%] sm:object-[78%_36%] md:object-[72%_70%]"
           sizes="100vw"
         />
-        <div className="absolute inset-0 bg-gradient-to-b from-ink/30 via-transparent to-ink md:hidden" />
+        <div className="absolute inset-0 bg-gradient-to-b from-ink/30 via-transparent to-ink/90 md:hidden" />
         <div className="absolute inset-0 hidden bg-gradient-to-r from-ink via-ink/80 to-ink/30 md:block" />
         <div className="absolute inset-0 hidden bg-gradient-to-t from-ink via-ink/50 to-ink/10 md:block" />
       </motion.div>
 
       {/* Copy — lower band on mobile, bottom-left overlay on desktop */}
-      <div className="relative z-10 flex flex-1 flex-col justify-end bg-ink px-0 pb-10 pt-2 md:absolute md:inset-0 md:bg-transparent md:pb-16 md:pt-32">
+      <div className="relative z-10 flex flex-col justify-start bg-ink px-0 pb-10 pt-5 md:absolute md:inset-0 md:justify-end md:bg-transparent md:pb-16 md:pt-32">
         <div className="section-pad mx-auto w-full max-w-6xl">
           <p className="eyebrow hero-enter mb-4 md:mb-6" style={{ animationDelay: "80ms" }}>
             Builder · Founder · Human
