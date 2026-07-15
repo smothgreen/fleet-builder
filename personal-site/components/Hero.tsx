@@ -34,7 +34,8 @@ export function Hero() {
           className="object-cover object-[78%_28%] sm:object-[78%_36%] md:object-[72%_70%]"
           sizes="100vw"
         />
-        <div className="absolute inset-0 bg-gradient-to-b from-ink/30 via-transparent to-ink/90 md:hidden" />
+        <div className="absolute inset-x-0 bottom-0 h-[55%] bg-gradient-to-b from-transparent via-ink/55 to-ink md:hidden" />
+        <div className="absolute inset-0 bg-gradient-to-b from-ink/25 to-transparent md:hidden" />
         <div className="absolute inset-0 hidden bg-gradient-to-r from-ink via-ink/80 to-ink/30 md:block" />
         <div className="absolute inset-0 hidden bg-gradient-to-t from-ink via-ink/50 to-ink/10 md:block" />
       </motion.div>
