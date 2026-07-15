@@ -27,7 +27,7 @@ export function Hero() {
           alt="David Skadron on State Street in Madison"
           fill
           priority
-          className="object-cover object-[78%_72%] sm:object-[78%_65%] md:object-[72%_70%]"
+          className="object-cover object-[78%_88%] sm:object-[78%_72%] md:object-[72%_70%]"
           sizes="100vw"
         />
       </motion.div>
