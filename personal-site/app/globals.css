@@ -1,0 +1,181 @@
+@import "tailwindcss";
+
+:root {
+  --ink: #07090d;
+  --ink-elevated: #0e1219;
+  --slate: #151b26;
+  --mist: #9aa6b8;
+  --paper: #eef2f7;
+  --paper-soft: #c5cedb;
+  --accent: #3d8bfd;
+  --accent-soft: #7eb6ff;
+  --warm: #d4a574;
+  --skad: #8b5cf6;
+  --skad-soft: #c4b5fd;
+  --line: rgba(238, 242, 247, 0.1);
+  --glow: rgba(61, 139, 253, 0.22);
+}
+
+@theme inline {
+  --color-ink: var(--ink);
+  --color-ink-elevated: var(--ink-elevated);
+  --color-slate: var(--slate);
+  --color-mist: var(--mist);
+  --color-paper: var(--paper);
+  --color-paper-soft: var(--paper-soft);
+  --color-accent: var(--accent);
+  --color-accent-soft: var(--accent-soft);
+  --color-warm: var(--warm);
+  --color-skad: var(--skad);
+  --color-skad-soft: var(--skad-soft);
+  --color-line: var(--line);
+  --font-sans: var(--font-body);
+  --font-display: var(--font-display);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
+
+body {
+  background: var(--ink);
+  color: var(--paper);
+  font-family: var(--font-body), system-ui, sans-serif;
+  text-rendering: optimizeLegibility;
+}
+
+::selection {
+  background: color-mix(in srgb, var(--accent) 45%, transparent);
+  color: white;
+}
+
+.font-display {
+  font-family: var(--font-display), Georgia, serif;
+}
+
+.atmosphere {
+  background:
+    radial-gradient(ellipse 80% 50% at 20% -10%, rgba(61, 139, 253, 0.16), transparent 55%),
+    radial-gradient(ellipse 60% 40% at 90% 10%, rgba(212, 165, 116, 0.1), transparent 50%),
+    radial-gradient(ellipse 70% 50% at 50% 100%, rgba(61, 139, 253, 0.08), transparent 55%),
+    var(--ink);
+}
+
+.section-pad {
+  padding-inline: clamp(1.25rem, 4vw, 3.5rem);
+}
+
+.eyebrow {
+  font-size: 0.75rem;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--accent-soft);
+  font-weight: 500;
+}
+
+.phone-frame {
+  position: relative;
+  border-radius: 2rem;
+  overflow: hidden;
+  border: 1px solid rgba(238, 242, 247, 0.14);
+  background: #000;
+  box-shadow:
+    0 0 0 1px rgba(0, 0, 0, 0.4),
+    0 30px 80px rgba(0, 0, 0, 0.55),
+    0 0 60px var(--glow);
+}
+
+.phone-frame img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+@keyframes hero-enter {
+  from {
+    opacity: 0;
+    transform: translateY(18px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.hero-enter {
+  animation: hero-enter 0.85s cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+.reveal {
+  opacity: 0;
+  transform: translateY(28px);
+  transition:
+    opacity 0.7s cubic-bezier(0.22, 1, 0.36, 1),
+    transform 0.7s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.reveal.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.skad-logo-glow {
+  position: relative;
+  isolation: isolate;
+}
+
+.skad-logo-glow::before {
+  content: "";
+  position: absolute;
+  inset: -6px;
+  z-index: 0;
+  border-radius: 1.25rem;
+  background: rgba(109, 40, 217, 0.45);
+  box-shadow:
+    0 0 16px 5px rgba(139, 92, 246, 0.55),
+    0 0 32px 12px rgba(124, 58, 237, 0.4),
+    0 0 48px 18px rgba(91, 33, 182, 0.28);
+  filter: blur(12px);
+  transform-origin: center;
+  animation: skad-breathe 4.6s ease-in-out infinite;
+  pointer-events: none;
+}
+
+@keyframes skad-breathe {
+  0%,
+  100% {
+    opacity: 0.65;
+    transform: scale(0.98);
+    filter: blur(10px);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.04);
+    filter: blur(14px);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hero-enter {
+    animation: none;
+  }
+
+  .reveal {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+
+  .skad-logo-glow::before {
+    animation: none;
+    opacity: 0.85;
+    transform: none;
+    filter: blur(12px);
+  }
+}
