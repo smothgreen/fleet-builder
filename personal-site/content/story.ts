@@ -16,7 +16,6 @@ export const nav = [
 
 export const hero = {
   name: "David Skadron",
-  thesis: "When I notice problems, I actually look for solutions.",
   quote:
     "The man who says he can, and the man who says he cannot are both correct.",
   quoteAttribution: "Confucius",

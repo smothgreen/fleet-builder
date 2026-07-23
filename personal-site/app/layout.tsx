@@ -16,12 +16,12 @@ const body = Outfit({
 export const metadata: Metadata = {
   title: "David Skadron",
   description:
-    "When I notice problems, I actually look for solutions — SkadApp, BluWorld, and stories that reach millions.",
+    "Builder, founder, human — SkadApp, BluWorld, and stories that reach millions.",
   metadataBase: new URL("https://www.davidskad.com"),
   openGraph: {
     title: "David Skadron",
     description:
-      "When I notice problems, I actually look for solutions — SkadApp, BluWorld, and stories that reach millions.",
+      "Builder, founder, human — SkadApp, BluWorld, and stories that reach millions.",
     url: "https://www.davidskad.com",
     siteName: "David Skadron",
     type: "website",
@@ -31,7 +31,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "David Skadron",
     description:
-      "When I notice problems, I actually look for solutions — SkadApp, BluWorld, and stories that reach millions.",
+      "Builder, founder, human — SkadApp, BluWorld, and stories that reach millions.",
     creator: "@DavidSkadron",
   },
 };
