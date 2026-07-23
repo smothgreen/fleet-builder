@@ -58,15 +58,9 @@ export function Hero() {
           >
             {hero.thesis}
           </p>
-          <p
-            className="hero-enter mt-2 max-w-lg text-sm text-mist md:mt-3 md:text-base"
-            style={{ animationDelay: "380ms" }}
-          >
-            {hero.supporting}
-          </p>
           <blockquote
             className="hero-enter mt-6 max-w-md border-t border-line/60 pt-5 md:mt-8 md:pt-6"
-            style={{ animationDelay: "440ms" }}
+            style={{ animationDelay: "400ms" }}
           >
             <p className="font-display text-[0.95rem] italic leading-snug text-paper-soft md:text-lg md:leading-relaxed">
               “{hero.quote}”
@@ -77,7 +71,7 @@ export function Hero() {
           </blockquote>
           <div
             className="hero-enter mt-7 flex flex-wrap items-center gap-3 md:mt-10 md:gap-4"
-            style={{ animationDelay: "520ms" }}
+            style={{ animationDelay: "500ms" }}
           >
             <a
               href={site.x}
