@@ -116,7 +116,7 @@ export const experience = {
   eyebrow: "Selected experience",
   items: [
     {
-      role: "Innovation Consultant",
+      role: "Strategic Advisor",
       org: "Weinhart Entrepreneurship Clinic",
       year: "2024",
       line: "Advised founders and local businesses through real growth constraints.",
