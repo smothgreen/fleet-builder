@@ -16,9 +16,9 @@ export const nav = [
 
 export const hero = {
   name: "David Skadron",
-  thesis: "I see a problem and find the solution.",
+  thesis: "When I notice problems, I actually look for solutions.",
   supporting:
-    "AI for veterinarians. A social network for real-life adventure. Impact seen by millions.",
+    "AI for veterinarians. A social network for real-life adventure. The man who says he can, and the man who says he cannot are both correct.",
   cta: "Work with me",
   portrait: "/images/hero/portrait.jpg",
 } as const;

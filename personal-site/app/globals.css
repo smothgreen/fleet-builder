@@ -174,8 +174,8 @@ body {
 
   .skad-logo-glow::before {
     animation: none;
-    opacity: 0.75;
+    opacity: 0.85;
     transform: none;
-    filter: blur(16px);
+    filter: blur(12px);
   }
 }

@@ -31,7 +31,7 @@ export function Hero() {
           alt="David Skadron on State Street in Madison"
           fill
           priority
-          className="object-cover object-[78%_28%] sm:object-[78%_36%] md:object-[72%_70%]"
+          className="object-cover object-[78%_28%] sm:object-[78%_36%] md:object-[72%_66%]"
           sizes="100vw"
         />
         <div className="absolute inset-x-0 bottom-0 h-[55%] bg-gradient-to-b from-transparent via-ink/55 to-ink md:hidden" />
