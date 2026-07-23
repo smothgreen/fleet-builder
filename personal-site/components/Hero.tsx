@@ -56,11 +56,17 @@ export function Hero() {
             className="hero-enter mt-4 max-w-lg text-sm text-mist md:mt-7 md:text-base"
             style={{ animationDelay: "280ms" }}
           >
+            {hero.supporting}
+          </p>
+          <p
+            className="hero-enter mt-2 max-w-lg text-sm text-mist md:mt-3 md:text-base"
+            style={{ animationDelay: "360ms" }}
+          >
             “{hero.quote}” — {hero.quoteAttribution}
           </p>
           <div
             className="hero-enter mt-7 flex flex-wrap items-center gap-3 md:mt-10 md:gap-4"
-            style={{ animationDelay: "400ms" }}
+            style={{ animationDelay: "460ms" }}
           >
             <a
               href={site.x}
