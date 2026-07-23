@@ -21,7 +21,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "David Skadron",
     description:
-      "AI for veterinarians. A social network for real-life adventure. The man who says he can, and the man who says he cannot are both correct.",
+      "AI for veterinarians. A social network for real-life adventure.",
     url: "https://www.davidskad.com",
     siteName: "David Skadron",
     type: "website",
@@ -31,7 +31,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "David Skadron",
     description:
-      "AI for veterinarians. A social network for real-life adventure. The man who says he can, and the man who says he cannot are both correct.",
+      "AI for veterinarians. A social network for real-life adventure.",
     creator: "@DavidSkadron",
   },
 };

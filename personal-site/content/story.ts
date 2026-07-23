@@ -18,7 +18,10 @@ export const hero = {
   name: "David Skadron",
   thesis: "When I notice problems, I actually look for solutions.",
   supporting:
-    "AI for veterinarians. A social network for real-life adventure. The man who says he can, and the man who says he cannot are both correct.",
+    "AI for veterinarians. A social network for real-life adventure.",
+  quote:
+    "The man who says he can, and the man who says he cannot are both correct.",
+  quoteAttribution: "Confucius",
   cta: "Work with me",
   portrait: "/images/hero/portrait.jpg",
 } as const;
@@ -56,7 +59,7 @@ export const bluworld = {
   screens: [
     {
       src: "/images/bluworld/sidequest.png",
-      alt: "BluWorld home with a nearby State Street side quest",
+      alt: "BluWorld map with a nearby State Street side quest",
       caption: "Side quests — cool things to do in any city",
     },
     {

@@ -64,9 +64,20 @@ export function Hero() {
           >
             {hero.supporting}
           </p>
+          <blockquote
+            className="hero-enter mt-6 max-w-md border-t border-line/60 pt-5 md:mt-8 md:pt-6"
+            style={{ animationDelay: "440ms" }}
+          >
+            <p className="font-display text-[0.95rem] italic leading-snug text-paper-soft md:text-lg md:leading-relaxed">
+              “{hero.quote}”
+            </p>
+            <cite className="mt-2 block text-xs not-italic tracking-wide text-mist md:text-sm">
+              — {hero.quoteAttribution}
+            </cite>
+          </blockquote>
           <div
             className="hero-enter mt-7 flex flex-wrap items-center gap-3 md:mt-10 md:gap-4"
-            style={{ animationDelay: "480ms" }}
+            style={{ animationDelay: "520ms" }}
           >
             <a
               href={site.x}
