@@ -59,7 +59,7 @@ export function Hero() {
             {hero.supporting}
           </p>
           <p
-            className="hero-enter mt-2 max-w-lg text-sm text-mist md:mt-3 md:text-base"
+            className="hero-enter mt-2 max-w-lg text-sm italic text-mist md:mt-3 md:text-base"
             style={{ animationDelay: "360ms" }}
           >
             “{hero.quote}” — {hero.quoteAttribution}
